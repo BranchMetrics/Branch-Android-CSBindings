@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="io.branch.referral">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Base64" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="decode" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="decode" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="decode" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="encode" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="encode" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="encodeToString" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="encodeToString" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CRLF" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NO_CLOSE" static="true" transient="false" type="int" type-generic-aware="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NO_PADDING" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NO_WRAP" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="URL_SAFE" static="true" transient="false" type="int" type-generic-aware="int" value="8" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Base64.Coder" static="true" visibility="">
+<method abstract="true" deprecated="not deprecated" final="false" name="maxOutputSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="process" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="op" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="output" static="false" transient="false" type="byte[]" type-generic-aware="byte[]" value="null" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="io.branch.referral.Base64.Coder" extends-generic-aware="io.branch.referral.Base64.Coder" final="false" name="Base64.Decoder" static="true" visibility="">
+<constructor deprecated="not deprecated" final="false" name="Base64.Decoder" static="false" type="io.branch.referral.Base64.Decoder" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="byte[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="maxOutputSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="process" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="io.branch.referral.Base64.Coder" extends-generic-aware="io.branch.referral.Base64.Coder" final="false" name="Base64.Encoder" static="true" visibility="">
+<constructor deprecated="not deprecated" final="false" name="Base64.Encoder" static="false" type="io.branch.referral.Base64.Encoder" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="byte[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="maxOutputSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="process" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="LINE_GROUPS" static="true" transient="false" type="int" type-generic-aware="int" value="19" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="do_cr" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="do_newline" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="do_padding" static="false" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Branch" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="clearUser" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="closeSession" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCredits" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCreditsForBucket" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstallReferringParams" native="false" return="org.json.JSONObject" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="io.branch.referral.Branch" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="io.branch.referral.Branch" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLongURL" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLongURL" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLongURL" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="org.json.JSONObject">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLongURL" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.json.JSONObject">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReferringParams" native="false" return="org.json.JSONObject" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getShortUrl" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.branch.referral.Branch.BranchLinkCreateListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getShortUrl" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="io.branch.referral.Branch.BranchLinkCreateListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getShortUrl" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="org.json.JSONObject">
+</parameter>
+<parameter name="p2" type="io.branch.referral.Branch.BranchLinkCreateListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getShortUrl" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.json.JSONObject">
+</parameter>
+<parameter name="p1" type="io.branch.referral.Branch.BranchLinkCreateListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTotalCountsForAction" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUniqueCountsForAction" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasIdentity" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="identifyUser" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="identifyUser" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="io.branch.referral.Branch.BranchReferralInitListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initUserSession" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initUserSession" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initUserSession" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.branch.referral.Branch.BranchReferralInitListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initUserSession" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.branch.referral.Branch.BranchReferralInitListener">
+</parameter>
+<parameter name="p1" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initUserSession" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.branch.referral.Branch.BranchReferralInitListener">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initUserSession" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.branch.referral.Branch.BranchReferralInitListener">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initUserSessionWithData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadActionCounts" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadActionCounts" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.branch.referral.Branch.BranchReferralStateChangedListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadRewards" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadRewards" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.branch.referral.Branch.BranchReferralStateChangedListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="redeemRewards" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="redeemRewards" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetUserSession" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="userCompletedAction" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="userCompletedAction" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="org.json.JSONObject">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Branch.1" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Branch.10" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Branch.11" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Branch.12" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Branch.2" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Branch.3" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Branch.4" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Branch.5" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Branch.6" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Branch.7" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Branch.8" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Branch.9" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Branch.BranchLinkCreateListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onLinkCreate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Branch.BranchReferralInitListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onInitFinished" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.json.JSONObject">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Branch.BranchReferralStateChangedListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onStateChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Branch.ReferralNetworkCallback" static="false" visibility="public">
+<implements name="io.branch.referral.NetworkCallback" name-generic-aware="io.branch.referral.NetworkCallback">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Branch.ReferralNetworkCallback" static="false" type="io.branch.referral.Branch.ReferralNetworkCallback" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="finished" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.json.JSONObject">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Branch.ReferralNetworkCallback.1" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Branch.ReferralNetworkCallback.2" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Branch.ReferralNetworkCallback.3" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Branch.ReferralNetworkCallback.4" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="io.branch.referral.RemoteInterface" extends-generic-aware="io.branch.referral.RemoteInterface" final="false" name="BranchRemoteInterface" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BranchRemoteInterface" static="false" type="io.branch.referral.BranchRemoteInterface" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BranchRemoteInterface" static="false" type="io.branch.referral.BranchRemoteInterface" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="createCustomUrl" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.json.JSONObject">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReferralCounts" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRewards" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="identifyUser" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.json.JSONObject">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="logoutUser" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.json.JSONObject">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="redeemRewards" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.json.JSONObject">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="registerClose" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="registerInstall" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="registerOpen" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setNetworkCallbackListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.branch.referral.NetworkCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="userCompletedAction" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.json.JSONObject">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="REQ_TAG_COMPLETE_ACTION" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;t_complete_action&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REQ_TAG_GET_CUSTOM_URL" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;t_get_custom_url&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REQ_TAG_GET_REFERRAL_COUNTS" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;t_get_referral_counts&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REQ_TAG_GET_REWARDS" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;t_get_rewards&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REQ_TAG_IDENTIFY" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;t_identify_user&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REQ_TAG_LOGOUT" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;t_logout&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REQ_TAG_REDEEM_REWARDS" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;t_redeem_rewards&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REQ_TAG_REGISTER_CLOSE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;t_register_close&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REQ_TAG_REGISTER_INSTALL" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;t_register_install&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REQ_TAG_REGISTER_OPEN" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;t_register_open&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="NetworkCallback" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="finished" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.json.JSONObject">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PrefHelper" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PrefHelper" static="false" type="io.branch.referral.PrefHelper" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearIsReferrable" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearUserValues" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAPIBaseUrl" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getActionTotalCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getActionUniqueCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAppKey" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBool" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCreditCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCreditCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDeviceFingerPrintID" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFloat" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIdentity" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIdentityID" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstallParams" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="io.branch.referral.PrefHelper" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInteger" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIsReferrable" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLinkClickID" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLinkClickIdentifier" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLong" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSessionID" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSessionParams" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUserURL" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setActionTotalCount" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setActionUniqueCount" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAppKey" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setBool" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.Boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCreditCount" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCreditCount" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDeviceFingerPrintID" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFloat" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setIdentity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setIdentityID" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setInstallParams" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setInteger" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setIsReferrable" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLinkClickID" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLinkClickIdentifier" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLong" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSessionID" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSessionParams" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setString" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setUserURL" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="LOG" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NO_STRING_VALUE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;bnc_no_value&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="RemoteInterface" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RemoteInterface" static="false" type="io.branch.referral.RemoteInterface" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="make_restful_get" native="false" return="org.json.JSONObject" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="make_restful_post" native="false" return="org.json.JSONObject" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="org.json.JSONObject">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="KEY_SERVER_CALL_STATUS_CODE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;httpcode&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEY_SERVER_CALL_TAG" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;server_call_tag&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NO_TAG_VALUE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;no_tag&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ServerRequest" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ServerRequest" static="false" type="io.branch.referral.ServerRequest" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="org.json.JSONObject">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPost" native="false" return="org.json.JSONObject" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTag" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="SystemObserver" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SystemObserver" static="false" type="io.branch.referral.SystemObserver" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAppVersion" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBluetoothPresent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBluetoothVersion" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCarrier" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNFCPresent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOS" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOSVersion" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPhoneBrand" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPhoneModel" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getScreenDisplay" native="false" return="android.util.DisplayMetrics" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTelephonePresent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUniqueID" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUpdateState" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWifiConnected" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="BLANK" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;bnc_no_value&quot;" visibility="public" volatile="false">
+</field>
+</class>
+</package>
+</api>
