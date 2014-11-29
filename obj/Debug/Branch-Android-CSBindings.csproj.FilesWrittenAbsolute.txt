@@ -1,5 +1,5 @@
 /Users/alexaustin/Documents/Java/Branch-Android-CSBindings/Branch-Android-CSBindings/obj/Debug/MonoAndroid,Version=v4.4.AssemblyAttribute.cs
-/Users/alexaustin/Documents/Java/Branch-Android-CSBindings/Branch-Android-CSBindings/obj/Debug/BranchAndroidCSBindings.Jars.branch-1.0.jar
+/Users/alexaustin/Documents/Java/Branch-Android-CSBindings/Branch-Android-CSBindings/obj/Debug/BranchAndroidCSBindings.Jars.branch-1.1.4.jar
 /Users/alexaustin/Documents/Java/Branch-Android-CSBindings/Branch-Android-CSBindings/bin/Debug/Branch-Android-CSBindings.dll.mdb
 /Users/alexaustin/Documents/Java/Branch-Android-CSBindings/Branch-Android-CSBindings/bin/Debug/Branch-Android-CSBindings.dll
 /Users/alexaustin/Documents/Java/Branch-Android-CSBindings/Branch-Android-CSBindings/obj/Debug/Branch-Android-CSBindings.dll

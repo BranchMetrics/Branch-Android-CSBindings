@@ -8,6 +8,106 @@ namespace BranchSDK {
 	[global::Android.Runtime.Register ("io/branch/referral/Branch", DoNotGenerateAcw=true)]
 	public partial class Branch : global::Java.Lang.Object {
 
+
+		static IntPtr FEATURE_TAG_DEAL_jfieldId;
+
+		// Metadata.xml XPath field reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/field[@name='FEATURE_TAG_DEAL']"
+		[Register ("FEATURE_TAG_DEAL")]
+		public static string FeatureTagDeal {
+			get {
+				if (FEATURE_TAG_DEAL_jfieldId == IntPtr.Zero)
+					FEATURE_TAG_DEAL_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "FEATURE_TAG_DEAL", "Ljava/lang/String;");
+				IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, FEATURE_TAG_DEAL_jfieldId);
+				return JNIEnv.GetString (__ret, JniHandleOwnership.TransferLocalRef);
+			}
+			set {
+				if (FEATURE_TAG_DEAL_jfieldId == IntPtr.Zero)
+					FEATURE_TAG_DEAL_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "FEATURE_TAG_DEAL", "Ljava/lang/String;");
+				IntPtr native_value = JNIEnv.NewString (value);
+				JNIEnv.SetStaticField (class_ref, FEATURE_TAG_DEAL_jfieldId, native_value);
+				JNIEnv.DeleteLocalRef (native_value);
+			}
+		}
+
+		static IntPtr FEATURE_TAG_GIFT_jfieldId;
+
+		// Metadata.xml XPath field reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/field[@name='FEATURE_TAG_GIFT']"
+		[Register ("FEATURE_TAG_GIFT")]
+		public static string FeatureTagGift {
+			get {
+				if (FEATURE_TAG_GIFT_jfieldId == IntPtr.Zero)
+					FEATURE_TAG_GIFT_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "FEATURE_TAG_GIFT", "Ljava/lang/String;");
+				IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, FEATURE_TAG_GIFT_jfieldId);
+				return JNIEnv.GetString (__ret, JniHandleOwnership.TransferLocalRef);
+			}
+			set {
+				if (FEATURE_TAG_GIFT_jfieldId == IntPtr.Zero)
+					FEATURE_TAG_GIFT_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "FEATURE_TAG_GIFT", "Ljava/lang/String;");
+				IntPtr native_value = JNIEnv.NewString (value);
+				JNIEnv.SetStaticField (class_ref, FEATURE_TAG_GIFT_jfieldId, native_value);
+				JNIEnv.DeleteLocalRef (native_value);
+			}
+		}
+
+		static IntPtr FEATURE_TAG_INVITE_jfieldId;
+
+		// Metadata.xml XPath field reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/field[@name='FEATURE_TAG_INVITE']"
+		[Register ("FEATURE_TAG_INVITE")]
+		public static string FeatureTagInvite {
+			get {
+				if (FEATURE_TAG_INVITE_jfieldId == IntPtr.Zero)
+					FEATURE_TAG_INVITE_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "FEATURE_TAG_INVITE", "Ljava/lang/String;");
+				IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, FEATURE_TAG_INVITE_jfieldId);
+				return JNIEnv.GetString (__ret, JniHandleOwnership.TransferLocalRef);
+			}
+			set {
+				if (FEATURE_TAG_INVITE_jfieldId == IntPtr.Zero)
+					FEATURE_TAG_INVITE_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "FEATURE_TAG_INVITE", "Ljava/lang/String;");
+				IntPtr native_value = JNIEnv.NewString (value);
+				JNIEnv.SetStaticField (class_ref, FEATURE_TAG_INVITE_jfieldId, native_value);
+				JNIEnv.DeleteLocalRef (native_value);
+			}
+		}
+
+		static IntPtr FEATURE_TAG_REFERRAL_jfieldId;
+
+		// Metadata.xml XPath field reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/field[@name='FEATURE_TAG_REFERRAL']"
+		[Register ("FEATURE_TAG_REFERRAL")]
+		public static string FeatureTagReferral {
+			get {
+				if (FEATURE_TAG_REFERRAL_jfieldId == IntPtr.Zero)
+					FEATURE_TAG_REFERRAL_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "FEATURE_TAG_REFERRAL", "Ljava/lang/String;");
+				IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, FEATURE_TAG_REFERRAL_jfieldId);
+				return JNIEnv.GetString (__ret, JniHandleOwnership.TransferLocalRef);
+			}
+			set {
+				if (FEATURE_TAG_REFERRAL_jfieldId == IntPtr.Zero)
+					FEATURE_TAG_REFERRAL_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "FEATURE_TAG_REFERRAL", "Ljava/lang/String;");
+				IntPtr native_value = JNIEnv.NewString (value);
+				JNIEnv.SetStaticField (class_ref, FEATURE_TAG_REFERRAL_jfieldId, native_value);
+				JNIEnv.DeleteLocalRef (native_value);
+			}
+		}
+
+		static IntPtr FEATURE_TAG_SHARE_jfieldId;
+
+		// Metadata.xml XPath field reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/field[@name='FEATURE_TAG_SHARE']"
+		[Register ("FEATURE_TAG_SHARE")]
+		public static string FeatureTagShare {
+			get {
+				if (FEATURE_TAG_SHARE_jfieldId == IntPtr.Zero)
+					FEATURE_TAG_SHARE_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "FEATURE_TAG_SHARE", "Ljava/lang/String;");
+				IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, FEATURE_TAG_SHARE_jfieldId);
+				return JNIEnv.GetString (__ret, JniHandleOwnership.TransferLocalRef);
+			}
+			set {
+				if (FEATURE_TAG_SHARE_jfieldId == IntPtr.Zero)
+					FEATURE_TAG_SHARE_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "FEATURE_TAG_SHARE", "Ljava/lang/String;");
+				IntPtr native_value = JNIEnv.NewString (value);
+				JNIEnv.SetStaticField (class_ref, FEATURE_TAG_SHARE_jfieldId, native_value);
+				JNIEnv.DeleteLocalRef (native_value);
+			}
+		}
 		// Metadata.xml XPath interface reference: path="/api/package[@name='io.branch.referral']/interface[@name='Branch.BranchLinkCreateListener']"
 		[Register ("io/branch/referral/Branch$BranchLinkCreateListener", "", "BranchSDK.Branch/IBranchLinkCreateListenerInvoker")]
 		public partial interface IBranchLinkCreateListener : IJavaObject {
@@ -128,6 +228,130 @@ namespace BranchSDK {
 			}
 
 			internal static bool __IsEmpty (IBranchLinkCreateListenerImplementor value)
+			{
+				return value.Handler == null;
+			}
+		}
+
+
+		// Metadata.xml XPath interface reference: path="/api/package[@name='io.branch.referral']/interface[@name='Branch.BranchListResponseListener']"
+		[Register ("io/branch/referral/Branch$BranchListResponseListener", "", "BranchSDK.Branch/IBranchListResponseListenerInvoker")]
+		public partial interface IBranchListResponseListener : IJavaObject {
+
+			// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/interface[@name='Branch.BranchListResponseListener']/method[@name='onReceivingResponse' and count(parameter)=1 and parameter[1][@type='org.json.JSONArray']]"
+			[Register ("onReceivingResponse", "(Lorg/json/JSONArray;)V", "GetOnReceivingResponse_Lorg_json_JSONArray_Handler:BranchSDK.Branch/IBranchListResponseListenerInvoker, Branch-Android-CSBindings")]
+			void OnReceivingResponse (global::Org.Json.JSONArray p0);
+
+		}
+
+		[global::Android.Runtime.Register ("io/branch/referral/Branch$BranchListResponseListener", DoNotGenerateAcw=true)]
+		internal class IBranchListResponseListenerInvoker : global::Java.Lang.Object, IBranchListResponseListener {
+
+			static IntPtr java_class_ref = JNIEnv.FindClass ("io/branch/referral/Branch$BranchListResponseListener");
+			IntPtr class_ref;
+
+			public static IBranchListResponseListener GetObject (IntPtr handle, JniHandleOwnership transfer)
+			{
+				return global::Java.Lang.Object.GetObject<IBranchListResponseListener> (handle, transfer);
+			}
+
+			static IntPtr Validate (IntPtr handle)
+			{
+				if (!JNIEnv.IsInstanceOf (handle, java_class_ref))
+					throw new InvalidCastException (string.Format ("Unable to convert instance of type '{0}' to type '{1}'.",
+								JNIEnv.GetClassNameFromInstance (handle), "io.branch.referral.Branch.BranchListResponseListener"));
+				return handle;
+			}
+
+			protected override void Dispose (bool disposing)
+			{
+				if (this.class_ref != IntPtr.Zero)
+					JNIEnv.DeleteGlobalRef (this.class_ref);
+				this.class_ref = IntPtr.Zero;
+				base.Dispose (disposing);
+			}
+
+			public IBranchListResponseListenerInvoker (IntPtr handle, JniHandleOwnership transfer) : base (Validate (handle), transfer)
+			{
+				IntPtr local_ref = JNIEnv.GetObjectClass (Handle);
+				this.class_ref = JNIEnv.NewGlobalRef (local_ref);
+				JNIEnv.DeleteLocalRef (local_ref);
+			}
+
+			protected override IntPtr ThresholdClass {
+				get { return class_ref; }
+			}
+
+			protected override System.Type ThresholdType {
+				get { return typeof (IBranchListResponseListenerInvoker); }
+			}
+
+			static Delegate cb_onReceivingResponse_Lorg_json_JSONArray_;
+#pragma warning disable 0169
+			static Delegate GetOnReceivingResponse_Lorg_json_JSONArray_Handler ()
+			{
+				if (cb_onReceivingResponse_Lorg_json_JSONArray_ == null)
+					cb_onReceivingResponse_Lorg_json_JSONArray_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr>) n_OnReceivingResponse_Lorg_json_JSONArray_);
+				return cb_onReceivingResponse_Lorg_json_JSONArray_;
+			}
+
+			static void n_OnReceivingResponse_Lorg_json_JSONArray_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+			{
+				global::BranchSDK.Branch.IBranchListResponseListener __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.IBranchListResponseListener> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+				global::Org.Json.JSONArray p0 = global::Java.Lang.Object.GetObject<global::Org.Json.JSONArray> (native_p0, JniHandleOwnership.DoNotTransfer);
+				__this.OnReceivingResponse (p0);
+			}
+#pragma warning restore 0169
+
+			IntPtr id_onReceivingResponse_Lorg_json_JSONArray_;
+			public void OnReceivingResponse (global::Org.Json.JSONArray p0)
+			{
+				if (id_onReceivingResponse_Lorg_json_JSONArray_ == IntPtr.Zero)
+					id_onReceivingResponse_Lorg_json_JSONArray_ = JNIEnv.GetMethodID (class_ref, "onReceivingResponse", "(Lorg/json/JSONArray;)V");
+				JNIEnv.CallVoidMethod (Handle, id_onReceivingResponse_Lorg_json_JSONArray_, new JValue (p0));
+			}
+
+		}
+
+		public partial class BranchListResponseEventArgs : global::System.EventArgs {
+
+			public BranchListResponseEventArgs (global::Org.Json.JSONArray p0)
+			{
+				this.p0 = p0;
+			}
+
+			global::Org.Json.JSONArray p0;
+			public global::Org.Json.JSONArray P0 {
+				get { return p0; }
+			}
+		}
+
+		[global::Android.Runtime.Register ("mono/io/branch/referral/Branch_BranchListResponseListenerImplementor")]
+		internal sealed class IBranchListResponseListenerImplementor : global::Java.Lang.Object, IBranchListResponseListener {
+
+			object sender;
+
+			public IBranchListResponseListenerImplementor (object sender)
+				: base (
+					global::Android.Runtime.JNIEnv.StartCreateInstance ("mono/io/branch/referral/Branch_BranchListResponseListenerImplementor", "()V"),
+					JniHandleOwnership.TransferLocalRef)
+			{
+				global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "()V");
+				this.sender = sender;
+			}
+
+#pragma warning disable 0649
+			public EventHandler<BranchListResponseEventArgs> Handler;
+#pragma warning restore 0649
+
+			public void OnReceivingResponse (global::Org.Json.JSONArray p0)
+			{
+				var __h = Handler;
+				if (__h != null)
+					__h (sender, new BranchListResponseEventArgs (p0));
+			}
+
+			internal static bool __IsEmpty (IBranchListResponseListenerImplementor value)
 			{
 				return value.Handler == null;
 			}
@@ -381,6 +605,92 @@ namespace BranchSDK {
 		}
 
 
+		// Metadata.xml XPath class reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch.CreditHistoryOrder']"
+		[global::Android.Runtime.Register ("io/branch/referral/Branch$CreditHistoryOrder", DoNotGenerateAcw=true)]
+		public sealed partial class CreditHistoryOrder : global::Java.Lang.Enum {
+
+
+			static IntPtr kLeastRecentFirst_jfieldId;
+
+			// Metadata.xml XPath field reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch.CreditHistoryOrder']/field[@name='kLeastRecentFirst']"
+			[Register ("kLeastRecentFirst")]
+			public static global::BranchSDK.Branch.CreditHistoryOrder KLeastRecentFirst {
+				get {
+					if (kLeastRecentFirst_jfieldId == IntPtr.Zero)
+						kLeastRecentFirst_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "kLeastRecentFirst", "Lio/branch/referral/Branch$CreditHistoryOrder;");
+					IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, kLeastRecentFirst_jfieldId);
+					return global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.CreditHistoryOrder> (__ret, JniHandleOwnership.TransferLocalRef);
+				}
+				set {
+					if (kLeastRecentFirst_jfieldId == IntPtr.Zero)
+						kLeastRecentFirst_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "kLeastRecentFirst", "Lio/branch/referral/Branch$CreditHistoryOrder;");
+					IntPtr native_value = JNIEnv.ToLocalJniHandle (value);
+					JNIEnv.SetStaticField (class_ref, kLeastRecentFirst_jfieldId, native_value);
+					JNIEnv.DeleteLocalRef (native_value);
+				}
+			}
+
+			static IntPtr kMostRecentFirst_jfieldId;
+
+			// Metadata.xml XPath field reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch.CreditHistoryOrder']/field[@name='kMostRecentFirst']"
+			[Register ("kMostRecentFirst")]
+			public static global::BranchSDK.Branch.CreditHistoryOrder KMostRecentFirst {
+				get {
+					if (kMostRecentFirst_jfieldId == IntPtr.Zero)
+						kMostRecentFirst_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "kMostRecentFirst", "Lio/branch/referral/Branch$CreditHistoryOrder;");
+					IntPtr __ret = JNIEnv.GetStaticObjectField (class_ref, kMostRecentFirst_jfieldId);
+					return global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.CreditHistoryOrder> (__ret, JniHandleOwnership.TransferLocalRef);
+				}
+				set {
+					if (kMostRecentFirst_jfieldId == IntPtr.Zero)
+						kMostRecentFirst_jfieldId = JNIEnv.GetStaticFieldID (class_ref, "kMostRecentFirst", "Lio/branch/referral/Branch$CreditHistoryOrder;");
+					IntPtr native_value = JNIEnv.ToLocalJniHandle (value);
+					JNIEnv.SetStaticField (class_ref, kMostRecentFirst_jfieldId, native_value);
+					JNIEnv.DeleteLocalRef (native_value);
+				}
+			}
+			internal static IntPtr java_class_handle;
+			internal static IntPtr class_ref {
+				get {
+					return JNIEnv.FindClass ("io/branch/referral/Branch$CreditHistoryOrder", ref java_class_handle);
+				}
+			}
+
+			protected override IntPtr ThresholdClass {
+				get { return class_ref; }
+			}
+
+			protected override global::System.Type ThresholdType {
+				get { return typeof (CreditHistoryOrder); }
+			}
+
+			internal CreditHistoryOrder (IntPtr javaReference, JniHandleOwnership transfer) : base (javaReference, transfer) {}
+
+			static IntPtr id_valueOf_Ljava_lang_String_;
+			// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch.CreditHistoryOrder']/method[@name='valueOf' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+			[Register ("valueOf", "(Ljava/lang/String;)Lio/branch/referral/Branch$CreditHistoryOrder;", "")]
+			public static global::BranchSDK.Branch.CreditHistoryOrder ValueOf (string p0)
+			{
+				if (id_valueOf_Ljava_lang_String_ == IntPtr.Zero)
+					id_valueOf_Ljava_lang_String_ = JNIEnv.GetStaticMethodID (class_ref, "valueOf", "(Ljava/lang/String;)Lio/branch/referral/Branch$CreditHistoryOrder;");
+				IntPtr native_p0 = JNIEnv.NewString (p0);
+				global::BranchSDK.Branch.CreditHistoryOrder __ret = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.CreditHistoryOrder> (JNIEnv.CallStaticObjectMethod  (class_ref, id_valueOf_Ljava_lang_String_, new JValue (native_p0)), JniHandleOwnership.TransferLocalRef);
+				JNIEnv.DeleteLocalRef (native_p0);
+				return __ret;
+			}
+
+			static IntPtr id_values;
+			// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch.CreditHistoryOrder']/method[@name='values' and count(parameter)=0]"
+			[Register ("values", "()[Lio/branch/referral/Branch$CreditHistoryOrder;", "")]
+			public static global::BranchSDK.Branch.CreditHistoryOrder[] Values ()
+			{
+				if (id_values == IntPtr.Zero)
+					id_values = JNIEnv.GetStaticMethodID (class_ref, "values", "()[Lio/branch/referral/Branch$CreditHistoryOrder;");
+				return (global::BranchSDK.Branch.CreditHistoryOrder[]) JNIEnv.GetArray (JNIEnv.CallStaticObjectMethod  (class_ref, id_values), JniHandleOwnership.TransferLocalRef, typeof (global::BranchSDK.Branch.CreditHistoryOrder));
+			}
+
+		}
+
 		// Metadata.xml XPath class reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch.ReferralNetworkCallback']"
 		[global::Android.Runtime.Register ("io/branch/referral/Branch$ReferralNetworkCallback", DoNotGenerateAcw=true)]
 		public partial class ReferralNetworkCallback : global::Java.Lang.Object, global::BranchSDK.INetworkCallback {
@@ -426,35 +736,35 @@ namespace BranchSDK {
 				JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor_Lio_branch_referral_Branch_, new JValue (__self));
 			}
 
-			static Delegate cb_finished_Lorg_json_JSONObject_;
+			static Delegate cb_finished_Lio_branch_referral_ServerResponse_;
 #pragma warning disable 0169
-			static Delegate GetFinished_Lorg_json_JSONObject_Handler ()
+			static Delegate GetFinished_Lio_branch_referral_ServerResponse_Handler ()
 			{
-				if (cb_finished_Lorg_json_JSONObject_ == null)
-					cb_finished_Lorg_json_JSONObject_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr>) n_Finished_Lorg_json_JSONObject_);
-				return cb_finished_Lorg_json_JSONObject_;
+				if (cb_finished_Lio_branch_referral_ServerResponse_ == null)
+					cb_finished_Lio_branch_referral_ServerResponse_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr>) n_Finished_Lio_branch_referral_ServerResponse_);
+				return cb_finished_Lio_branch_referral_ServerResponse_;
 			}
 
-			static void n_Finished_Lorg_json_JSONObject_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+			static void n_Finished_Lio_branch_referral_ServerResponse_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
 			{
 				global::BranchSDK.Branch.ReferralNetworkCallback __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.ReferralNetworkCallback> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-				global::Org.Json.JSONObject p0 = global::Java.Lang.Object.GetObject<global::Org.Json.JSONObject> (native_p0, JniHandleOwnership.DoNotTransfer);
+				global::BranchSDK.ServerResponse p0 = global::Java.Lang.Object.GetObject<global::BranchSDK.ServerResponse> (native_p0, JniHandleOwnership.DoNotTransfer);
 				__this.Finished (p0);
 			}
 #pragma warning restore 0169
 
-			static IntPtr id_finished_Lorg_json_JSONObject_;
-			// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch.ReferralNetworkCallback']/method[@name='finished' and count(parameter)=1 and parameter[1][@type='org.json.JSONObject']]"
-			[Register ("finished", "(Lorg/json/JSONObject;)V", "GetFinished_Lorg_json_JSONObject_Handler")]
-			public virtual void Finished (global::Org.Json.JSONObject p0)
+			static IntPtr id_finished_Lio_branch_referral_ServerResponse_;
+			// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch.ReferralNetworkCallback']/method[@name='finished' and count(parameter)=1 and parameter[1][@type='io.branch.referral.ServerResponse']]"
+			[Register ("finished", "(Lio/branch/referral/ServerResponse;)V", "GetFinished_Lio_branch_referral_ServerResponse_Handler")]
+			public virtual void Finished (global::BranchSDK.ServerResponse p0)
 			{
-				if (id_finished_Lorg_json_JSONObject_ == IntPtr.Zero)
-					id_finished_Lorg_json_JSONObject_ = JNIEnv.GetMethodID (class_ref, "finished", "(Lorg/json/JSONObject;)V");
+				if (id_finished_Lio_branch_referral_ServerResponse_ == IntPtr.Zero)
+					id_finished_Lio_branch_referral_ServerResponse_ = JNIEnv.GetMethodID (class_ref, "finished", "(Lio/branch/referral/ServerResponse;)V");
 
 				if (GetType () == ThresholdType)
-					JNIEnv.CallVoidMethod  (Handle, id_finished_Lorg_json_JSONObject_, new JValue (p0));
+					JNIEnv.CallVoidMethod  (Handle, id_finished_Lio_branch_referral_ServerResponse_, new JValue (p0));
 				else
-					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "finished", "(Lorg/json/JSONObject;)V"), new JValue (p0));
+					JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "finished", "(Lio/branch/referral/ServerResponse;)V"), new JValue (p0));
 			}
 
 		}
@@ -507,34 +817,34 @@ namespace BranchSDK {
 			}
 		}
 
-		static Delegate cb_hasIdentity;
+		static Delegate cb_getFirstReferringParams;
 #pragma warning disable 0169
-		static Delegate GetHasIdentityHandler ()
+		static Delegate GetGetFirstReferringParamsHandler ()
 		{
-			if (cb_hasIdentity == null)
-				cb_hasIdentity = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, bool>) n_HasIdentity);
-			return cb_hasIdentity;
+			if (cb_getFirstReferringParams == null)
+				cb_getFirstReferringParams = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr>) n_GetFirstReferringParams);
+			return cb_getFirstReferringParams;
 		}
 
-		static bool n_HasIdentity (IntPtr jnienv, IntPtr native__this)
+		static IntPtr n_GetFirstReferringParams (IntPtr jnienv, IntPtr native__this)
 		{
 			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-			return __this.HasIdentity;
+			return JNIEnv.ToLocalJniHandle (__this.FirstReferringParams);
 		}
 #pragma warning restore 0169
 
-		static IntPtr id_hasIdentity;
-		public virtual bool HasIdentity {
-			// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='hasIdentity' and count(parameter)=0]"
-			[Register ("hasIdentity", "()Z", "GetHasIdentityHandler")]
+		static IntPtr id_getFirstReferringParams;
+		public virtual global::Org.Json.JSONObject FirstReferringParams {
+			// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='getFirstReferringParams' and count(parameter)=0]"
+			[Register ("getFirstReferringParams", "()Lorg/json/JSONObject;", "GetGetFirstReferringParamsHandler")]
 			get {
-				if (id_hasIdentity == IntPtr.Zero)
-					id_hasIdentity = JNIEnv.GetMethodID (class_ref, "hasIdentity", "()Z");
+				if (id_getFirstReferringParams == IntPtr.Zero)
+					id_getFirstReferringParams = JNIEnv.GetMethodID (class_ref, "getFirstReferringParams", "()Lorg/json/JSONObject;");
 
 				if (GetType () == ThresholdType)
-					return JNIEnv.CallBooleanMethod  (Handle, id_hasIdentity);
+					return global::Java.Lang.Object.GetObject<global::Org.Json.JSONObject> (JNIEnv.CallObjectMethod  (Handle, id_getFirstReferringParams), JniHandleOwnership.TransferLocalRef);
 				else
-					return JNIEnv.CallNonvirtualBooleanMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "hasIdentity", "()Z"));
+					return global::Java.Lang.Object.GetObject<global::Org.Json.JSONObject> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getFirstReferringParams", "()Lorg/json/JSONObject;")), JniHandleOwnership.TransferLocalRef);
 			}
 		}
 
@@ -555,6 +865,7 @@ namespace BranchSDK {
 #pragma warning restore 0169
 
 		static IntPtr id_getInstallReferringParams;
+		[Obsolete (@"deprecated")]
 		public virtual global::Org.Json.JSONObject InstallReferringParams {
 			// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='getInstallReferringParams' and count(parameter)=0]"
 			[Register ("getInstallReferringParams", "()Lorg/json/JSONObject;", "GetGetInstallReferringParamsHandler")]
@@ -569,34 +880,34 @@ namespace BranchSDK {
 			}
 		}
 
-		static Delegate cb_getLongURL;
+		static Delegate cb_getLatestReferringParams;
 #pragma warning disable 0169
-		static Delegate GetGetLongURLHandler ()
+		static Delegate GetGetLatestReferringParamsHandler ()
 		{
-			if (cb_getLongURL == null)
-				cb_getLongURL = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr>) n_GetLongURL);
-			return cb_getLongURL;
+			if (cb_getLatestReferringParams == null)
+				cb_getLatestReferringParams = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr>) n_GetLatestReferringParams);
+			return cb_getLatestReferringParams;
 		}
 
-		static IntPtr n_GetLongURL (IntPtr jnienv, IntPtr native__this)
+		static IntPtr n_GetLatestReferringParams (IntPtr jnienv, IntPtr native__this)
 		{
 			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-			return JNIEnv.NewString (__this.LongURL);
+			return JNIEnv.ToLocalJniHandle (__this.LatestReferringParams);
 		}
 #pragma warning restore 0169
 
-		static IntPtr id_getLongURL;
-		public virtual string LongURL {
-			// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='getLongURL' and count(parameter)=0]"
-			[Register ("getLongURL", "()Ljava/lang/String;", "GetGetLongURLHandler")]
+		static IntPtr id_getLatestReferringParams;
+		public virtual global::Org.Json.JSONObject LatestReferringParams {
+			// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='getLatestReferringParams' and count(parameter)=0]"
+			[Register ("getLatestReferringParams", "()Lorg/json/JSONObject;", "GetGetLatestReferringParamsHandler")]
 			get {
-				if (id_getLongURL == IntPtr.Zero)
-					id_getLongURL = JNIEnv.GetMethodID (class_ref, "getLongURL", "()Ljava/lang/String;");
+				if (id_getLatestReferringParams == IntPtr.Zero)
+					id_getLatestReferringParams = JNIEnv.GetMethodID (class_ref, "getLatestReferringParams", "()Lorg/json/JSONObject;");
 
 				if (GetType () == ThresholdType)
-					return JNIEnv.GetString (JNIEnv.CallObjectMethod  (Handle, id_getLongURL), JniHandleOwnership.TransferLocalRef);
+					return global::Java.Lang.Object.GetObject<global::Org.Json.JSONObject> (JNIEnv.CallObjectMethod  (Handle, id_getLatestReferringParams), JniHandleOwnership.TransferLocalRef);
 				else
-					return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getLongURL", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
+					return global::Java.Lang.Object.GetObject<global::Org.Json.JSONObject> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getLatestReferringParams", "()Lorg/json/JSONObject;")), JniHandleOwnership.TransferLocalRef);
 			}
 		}
 
@@ -617,6 +928,7 @@ namespace BranchSDK {
 #pragma warning restore 0169
 
 		static IntPtr id_getReferringParams;
+		[Obsolete (@"deprecated")]
 		public virtual global::Org.Json.JSONObject ReferringParams {
 			// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='getReferringParams' and count(parameter)=0]"
 			[Register ("getReferringParams", "()Lorg/json/JSONObject;", "GetGetReferringParamsHandler")]
@@ -691,6 +1003,217 @@ namespace BranchSDK {
 				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "closeSession", "()V"));
 		}
 
+		static Delegate cb_getContentUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
+#pragma warning disable 0169
+		static Delegate GetGetContentUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_Handler ()
+		{
+			if (cb_getContentUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ == null)
+				cb_getContentUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr, IntPtr, IntPtr>) n_GetContentUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_);
+			return cb_getContentUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
+		}
+
+		static void n_GetContentUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1, IntPtr native_p2)
+		{
+			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
+			global::Org.Json.JSONObject p1 = global::Java.Lang.Object.GetObject<global::Org.Json.JSONObject> (native_p1, JniHandleOwnership.DoNotTransfer);
+			global::BranchSDK.Branch.IBranchLinkCreateListener p2 = (global::BranchSDK.Branch.IBranchLinkCreateListener)global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.IBranchLinkCreateListener> (native_p2, JniHandleOwnership.DoNotTransfer);
+			__this.GetContentUrl (p0, p1, p2);
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_getContentUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='getContentUrl' and count(parameter)=3 and parameter[1][@type='java.lang.String'] and parameter[2][@type='org.json.JSONObject'] and parameter[3][@type='io.branch.referral.Branch.BranchLinkCreateListener']]"
+		[Register ("getContentUrl", "(Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V", "GetGetContentUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_Handler")]
+		public virtual void GetContentUrl (string p0, global::Org.Json.JSONObject p1, global::BranchSDK.Branch.IBranchLinkCreateListener p2)
+		{
+			if (id_getContentUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ == IntPtr.Zero)
+				id_getContentUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ = JNIEnv.GetMethodID (class_ref, "getContentUrl", "(Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V");
+			IntPtr native_p0 = JNIEnv.NewString (p0);
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_getContentUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_, new JValue (native_p0), new JValue (p1), new JValue (p2));
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getContentUrl", "(Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V"), new JValue (native_p0), new JValue (p1), new JValue (p2));
+			JNIEnv.DeleteLocalRef (native_p0);
+		}
+
+		static Delegate cb_getContentUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
+#pragma warning disable 0169
+		static Delegate GetGetContentUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_Handler ()
+		{
+			if (cb_getContentUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ == null)
+				cb_getContentUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, IntPtr>) n_GetContentUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_);
+			return cb_getContentUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
+		}
+
+		static void n_GetContentUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1, IntPtr native_p2, IntPtr native_p3)
+		{
+			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			System.Collections.Generic.ICollection<string> p0 = global::Android.Runtime.JavaCollection<string>.FromJniHandle (native_p0, JniHandleOwnership.DoNotTransfer);
+			string p1 = JNIEnv.GetString (native_p1, JniHandleOwnership.DoNotTransfer);
+			global::Org.Json.JSONObject p2 = global::Java.Lang.Object.GetObject<global::Org.Json.JSONObject> (native_p2, JniHandleOwnership.DoNotTransfer);
+			global::BranchSDK.Branch.IBranchLinkCreateListener p3 = (global::BranchSDK.Branch.IBranchLinkCreateListener)global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.IBranchLinkCreateListener> (native_p3, JniHandleOwnership.DoNotTransfer);
+			__this.GetContentUrl (p0, p1, p2, p3);
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_getContentUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='getContentUrl' and count(parameter)=4 and parameter[1][@type='java.util.Collection'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='org.json.JSONObject'] and parameter[4][@type='io.branch.referral.Branch.BranchLinkCreateListener']]"
+		[Register ("getContentUrl", "(Ljava/util/Collection;Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V", "GetGetContentUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_Handler")]
+		public virtual void GetContentUrl (global::System.Collections.Generic.ICollection<string> p0, string p1, global::Org.Json.JSONObject p2, global::BranchSDK.Branch.IBranchLinkCreateListener p3)
+		{
+			if (id_getContentUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ == IntPtr.Zero)
+				id_getContentUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ = JNIEnv.GetMethodID (class_ref, "getContentUrl", "(Ljava/util/Collection;Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V");
+			IntPtr native_p0 = global::Android.Runtime.JavaCollection<string>.ToLocalJniHandle (p0);
+			IntPtr native_p1 = JNIEnv.NewString (p1);
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_getContentUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_, new JValue (native_p0), new JValue (native_p1), new JValue (p2), new JValue (p3));
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getContentUrl", "(Ljava/util/Collection;Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V"), new JValue (native_p0), new JValue (native_p1), new JValue (p2), new JValue (p3));
+			JNIEnv.DeleteLocalRef (native_p0);
+			JNIEnv.DeleteLocalRef (native_p1);
+		}
+
+		static Delegate cb_getCreditHistory_Lio_branch_referral_Branch_BranchListResponseListener_;
+#pragma warning disable 0169
+		static Delegate GetGetCreditHistory_Lio_branch_referral_Branch_BranchListResponseListener_Handler ()
+		{
+			if (cb_getCreditHistory_Lio_branch_referral_Branch_BranchListResponseListener_ == null)
+				cb_getCreditHistory_Lio_branch_referral_Branch_BranchListResponseListener_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr>) n_GetCreditHistory_Lio_branch_referral_Branch_BranchListResponseListener_);
+			return cb_getCreditHistory_Lio_branch_referral_Branch_BranchListResponseListener_;
+		}
+
+		static void n_GetCreditHistory_Lio_branch_referral_Branch_BranchListResponseListener_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+		{
+			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::BranchSDK.Branch.IBranchListResponseListener p0 = (global::BranchSDK.Branch.IBranchListResponseListener)global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.IBranchListResponseListener> (native_p0, JniHandleOwnership.DoNotTransfer);
+			__this.GetCreditHistory (p0);
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_getCreditHistory_Lio_branch_referral_Branch_BranchListResponseListener_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='getCreditHistory' and count(parameter)=1 and parameter[1][@type='io.branch.referral.Branch.BranchListResponseListener']]"
+		[Register ("getCreditHistory", "(Lio/branch/referral/Branch$BranchListResponseListener;)V", "GetGetCreditHistory_Lio_branch_referral_Branch_BranchListResponseListener_Handler")]
+		public virtual void GetCreditHistory (global::BranchSDK.Branch.IBranchListResponseListener p0)
+		{
+			if (id_getCreditHistory_Lio_branch_referral_Branch_BranchListResponseListener_ == IntPtr.Zero)
+				id_getCreditHistory_Lio_branch_referral_Branch_BranchListResponseListener_ = JNIEnv.GetMethodID (class_ref, "getCreditHistory", "(Lio/branch/referral/Branch$BranchListResponseListener;)V");
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_getCreditHistory_Lio_branch_referral_Branch_BranchListResponseListener_, new JValue (p0));
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getCreditHistory", "(Lio/branch/referral/Branch$BranchListResponseListener;)V"), new JValue (p0));
+		}
+
+		static Delegate cb_getCreditHistory_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_;
+#pragma warning disable 0169
+		static Delegate GetGetCreditHistory_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_Handler ()
+		{
+			if (cb_getCreditHistory_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_ == null)
+				cb_getCreditHistory_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr, int, IntPtr, IntPtr>) n_GetCreditHistory_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_);
+			return cb_getCreditHistory_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_;
+		}
+
+		static void n_GetCreditHistory_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, int p1, IntPtr native_p2, IntPtr native_p3)
+		{
+			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
+			global::BranchSDK.Branch.CreditHistoryOrder p2 = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.CreditHistoryOrder> (native_p2, JniHandleOwnership.DoNotTransfer);
+			global::BranchSDK.Branch.IBranchListResponseListener p3 = (global::BranchSDK.Branch.IBranchListResponseListener)global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.IBranchListResponseListener> (native_p3, JniHandleOwnership.DoNotTransfer);
+			__this.GetCreditHistory (p0, p1, p2, p3);
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_getCreditHistory_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='getCreditHistory' and count(parameter)=4 and parameter[1][@type='java.lang.String'] and parameter[2][@type='int'] and parameter[3][@type='io.branch.referral.Branch.CreditHistoryOrder'] and parameter[4][@type='io.branch.referral.Branch.BranchListResponseListener']]"
+		[Register ("getCreditHistory", "(Ljava/lang/String;ILio/branch/referral/Branch$CreditHistoryOrder;Lio/branch/referral/Branch$BranchListResponseListener;)V", "GetGetCreditHistory_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_Handler")]
+		public virtual void GetCreditHistory (string p0, int p1, global::BranchSDK.Branch.CreditHistoryOrder p2, global::BranchSDK.Branch.IBranchListResponseListener p3)
+		{
+			if (id_getCreditHistory_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_ == IntPtr.Zero)
+				id_getCreditHistory_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_ = JNIEnv.GetMethodID (class_ref, "getCreditHistory", "(Ljava/lang/String;ILio/branch/referral/Branch$CreditHistoryOrder;Lio/branch/referral/Branch$BranchListResponseListener;)V");
+			IntPtr native_p0 = JNIEnv.NewString (p0);
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_getCreditHistory_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_, new JValue (native_p0), new JValue (p1), new JValue (p2), new JValue (p3));
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getCreditHistory", "(Ljava/lang/String;ILio/branch/referral/Branch$CreditHistoryOrder;Lio/branch/referral/Branch$BranchListResponseListener;)V"), new JValue (native_p0), new JValue (p1), new JValue (p2), new JValue (p3));
+			JNIEnv.DeleteLocalRef (native_p0);
+		}
+
+		static Delegate cb_getCreditHistory_Ljava_lang_String_Lio_branch_referral_Branch_BranchListResponseListener_;
+#pragma warning disable 0169
+		static Delegate GetGetCreditHistory_Ljava_lang_String_Lio_branch_referral_Branch_BranchListResponseListener_Handler ()
+		{
+			if (cb_getCreditHistory_Ljava_lang_String_Lio_branch_referral_Branch_BranchListResponseListener_ == null)
+				cb_getCreditHistory_Ljava_lang_String_Lio_branch_referral_Branch_BranchListResponseListener_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr, IntPtr>) n_GetCreditHistory_Ljava_lang_String_Lio_branch_referral_Branch_BranchListResponseListener_);
+			return cb_getCreditHistory_Ljava_lang_String_Lio_branch_referral_Branch_BranchListResponseListener_;
+		}
+
+		static void n_GetCreditHistory_Ljava_lang_String_Lio_branch_referral_Branch_BranchListResponseListener_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1)
+		{
+			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
+			global::BranchSDK.Branch.IBranchListResponseListener p1 = (global::BranchSDK.Branch.IBranchListResponseListener)global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.IBranchListResponseListener> (native_p1, JniHandleOwnership.DoNotTransfer);
+			__this.GetCreditHistory (p0, p1);
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_getCreditHistory_Ljava_lang_String_Lio_branch_referral_Branch_BranchListResponseListener_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='getCreditHistory' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='io.branch.referral.Branch.BranchListResponseListener']]"
+		[Register ("getCreditHistory", "(Ljava/lang/String;Lio/branch/referral/Branch$BranchListResponseListener;)V", "GetGetCreditHistory_Ljava_lang_String_Lio_branch_referral_Branch_BranchListResponseListener_Handler")]
+		public virtual void GetCreditHistory (string p0, global::BranchSDK.Branch.IBranchListResponseListener p1)
+		{
+			if (id_getCreditHistory_Ljava_lang_String_Lio_branch_referral_Branch_BranchListResponseListener_ == IntPtr.Zero)
+				id_getCreditHistory_Ljava_lang_String_Lio_branch_referral_Branch_BranchListResponseListener_ = JNIEnv.GetMethodID (class_ref, "getCreditHistory", "(Ljava/lang/String;Lio/branch/referral/Branch$BranchListResponseListener;)V");
+			IntPtr native_p0 = JNIEnv.NewString (p0);
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_getCreditHistory_Ljava_lang_String_Lio_branch_referral_Branch_BranchListResponseListener_, new JValue (native_p0), new JValue (p1));
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getCreditHistory", "(Ljava/lang/String;Lio/branch/referral/Branch$BranchListResponseListener;)V"), new JValue (native_p0), new JValue (p1));
+			JNIEnv.DeleteLocalRef (native_p0);
+		}
+
+		static Delegate cb_getCreditHistory_Ljava_lang_String_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_;
+#pragma warning disable 0169
+		static Delegate GetGetCreditHistory_Ljava_lang_String_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_Handler ()
+		{
+			if (cb_getCreditHistory_Ljava_lang_String_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_ == null)
+				cb_getCreditHistory_Ljava_lang_String_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr, IntPtr, int, IntPtr, IntPtr>) n_GetCreditHistory_Ljava_lang_String_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_);
+			return cb_getCreditHistory_Ljava_lang_String_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_;
+		}
+
+		static void n_GetCreditHistory_Ljava_lang_String_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1, int p2, IntPtr native_p3, IntPtr native_p4)
+		{
+			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
+			string p1 = JNIEnv.GetString (native_p1, JniHandleOwnership.DoNotTransfer);
+			global::BranchSDK.Branch.CreditHistoryOrder p3 = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.CreditHistoryOrder> (native_p3, JniHandleOwnership.DoNotTransfer);
+			global::BranchSDK.Branch.IBranchListResponseListener p4 = (global::BranchSDK.Branch.IBranchListResponseListener)global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.IBranchListResponseListener> (native_p4, JniHandleOwnership.DoNotTransfer);
+			__this.GetCreditHistory (p0, p1, p2, p3, p4);
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_getCreditHistory_Ljava_lang_String_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='getCreditHistory' and count(parameter)=5 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='int'] and parameter[4][@type='io.branch.referral.Branch.CreditHistoryOrder'] and parameter[5][@type='io.branch.referral.Branch.BranchListResponseListener']]"
+		[Register ("getCreditHistory", "(Ljava/lang/String;Ljava/lang/String;ILio/branch/referral/Branch$CreditHistoryOrder;Lio/branch/referral/Branch$BranchListResponseListener;)V", "GetGetCreditHistory_Ljava_lang_String_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_Handler")]
+		public virtual void GetCreditHistory (string p0, string p1, int p2, global::BranchSDK.Branch.CreditHistoryOrder p3, global::BranchSDK.Branch.IBranchListResponseListener p4)
+		{
+			if (id_getCreditHistory_Ljava_lang_String_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_ == IntPtr.Zero)
+				id_getCreditHistory_Ljava_lang_String_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_ = JNIEnv.GetMethodID (class_ref, "getCreditHistory", "(Ljava/lang/String;Ljava/lang/String;ILio/branch/referral/Branch$CreditHistoryOrder;Lio/branch/referral/Branch$BranchListResponseListener;)V");
+			IntPtr native_p0 = JNIEnv.NewString (p0);
+			IntPtr native_p1 = JNIEnv.NewString (p1);
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_getCreditHistory_Ljava_lang_String_Ljava_lang_String_ILio_branch_referral_Branch_CreditHistoryOrder_Lio_branch_referral_Branch_BranchListResponseListener_, new JValue (native_p0), new JValue (native_p1), new JValue (p2), new JValue (p3), new JValue (p4));
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getCreditHistory", "(Ljava/lang/String;Ljava/lang/String;ILio/branch/referral/Branch$CreditHistoryOrder;Lio/branch/referral/Branch$BranchListResponseListener;)V"), new JValue (native_p0), new JValue (native_p1), new JValue (p2), new JValue (p3), new JValue (p4));
+			JNIEnv.DeleteLocalRef (native_p0);
+			JNIEnv.DeleteLocalRef (native_p1);
+		}
+
 		static Delegate cb_getCreditsForBucket_Ljava_lang_String_;
 #pragma warning disable 0169
 		static Delegate GetGetCreditsForBucket_Ljava_lang_String_Handler ()
@@ -751,111 +1274,77 @@ namespace BranchSDK {
 			return __ret;
 		}
 
-		static Delegate cb_getLongURL_Ljava_lang_String_;
+		static Delegate cb_getReferralUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
 #pragma warning disable 0169
-		static Delegate GetGetLongURL_Ljava_lang_String_Handler ()
+		static Delegate GetGetReferralUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_Handler ()
 		{
-			if (cb_getLongURL_Ljava_lang_String_ == null)
-				cb_getLongURL_Ljava_lang_String_ = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr, IntPtr>) n_GetLongURL_Ljava_lang_String_);
-			return cb_getLongURL_Ljava_lang_String_;
+			if (cb_getReferralUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ == null)
+				cb_getReferralUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr, IntPtr, IntPtr>) n_GetReferralUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_);
+			return cb_getReferralUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
 		}
 
-		static IntPtr n_GetLongURL_Ljava_lang_String_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
-		{
-			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
-			IntPtr __ret = JNIEnv.NewString (__this.GetLongURL (p0));
-			return __ret;
-		}
-#pragma warning restore 0169
-
-		static IntPtr id_getLongURL_Ljava_lang_String_;
-		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='getLongURL' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
-		[Register ("getLongURL", "(Ljava/lang/String;)Ljava/lang/String;", "GetGetLongURL_Ljava_lang_String_Handler")]
-		public virtual string GetLongURL (string p0)
-		{
-			if (id_getLongURL_Ljava_lang_String_ == IntPtr.Zero)
-				id_getLongURL_Ljava_lang_String_ = JNIEnv.GetMethodID (class_ref, "getLongURL", "(Ljava/lang/String;)Ljava/lang/String;");
-			IntPtr native_p0 = JNIEnv.NewString (p0);
-
-			string __ret;
-			if (GetType () == ThresholdType)
-				__ret = JNIEnv.GetString (JNIEnv.CallObjectMethod  (Handle, id_getLongURL_Ljava_lang_String_, new JValue (native_p0)), JniHandleOwnership.TransferLocalRef);
-			else
-				__ret = JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getLongURL", "(Ljava/lang/String;)Ljava/lang/String;"), new JValue (native_p0)), JniHandleOwnership.TransferLocalRef);
-			JNIEnv.DeleteLocalRef (native_p0);
-			return __ret;
-		}
-
-		static Delegate cb_getLongURL_Ljava_lang_String_Lorg_json_JSONObject_;
-#pragma warning disable 0169
-		static Delegate GetGetLongURL_Ljava_lang_String_Lorg_json_JSONObject_Handler ()
-		{
-			if (cb_getLongURL_Ljava_lang_String_Lorg_json_JSONObject_ == null)
-				cb_getLongURL_Ljava_lang_String_Lorg_json_JSONObject_ = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr, IntPtr, IntPtr>) n_GetLongURL_Ljava_lang_String_Lorg_json_JSONObject_);
-			return cb_getLongURL_Ljava_lang_String_Lorg_json_JSONObject_;
-		}
-
-		static IntPtr n_GetLongURL_Ljava_lang_String_Lorg_json_JSONObject_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1)
+		static void n_GetReferralUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1, IntPtr native_p2)
 		{
 			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
 			global::Org.Json.JSONObject p1 = global::Java.Lang.Object.GetObject<global::Org.Json.JSONObject> (native_p1, JniHandleOwnership.DoNotTransfer);
-			IntPtr __ret = JNIEnv.NewString (__this.GetLongURL (p0, p1));
-			return __ret;
+			global::BranchSDK.Branch.IBranchLinkCreateListener p2 = (global::BranchSDK.Branch.IBranchLinkCreateListener)global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.IBranchLinkCreateListener> (native_p2, JniHandleOwnership.DoNotTransfer);
+			__this.GetReferralUrl (p0, p1, p2);
 		}
 #pragma warning restore 0169
 
-		static IntPtr id_getLongURL_Ljava_lang_String_Lorg_json_JSONObject_;
-		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='getLongURL' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='org.json.JSONObject']]"
-		[Register ("getLongURL", "(Ljava/lang/String;Lorg/json/JSONObject;)Ljava/lang/String;", "GetGetLongURL_Ljava_lang_String_Lorg_json_JSONObject_Handler")]
-		public virtual string GetLongURL (string p0, global::Org.Json.JSONObject p1)
+		static IntPtr id_getReferralUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='getReferralUrl' and count(parameter)=3 and parameter[1][@type='java.lang.String'] and parameter[2][@type='org.json.JSONObject'] and parameter[3][@type='io.branch.referral.Branch.BranchLinkCreateListener']]"
+		[Register ("getReferralUrl", "(Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V", "GetGetReferralUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_Handler")]
+		public virtual void GetReferralUrl (string p0, global::Org.Json.JSONObject p1, global::BranchSDK.Branch.IBranchLinkCreateListener p2)
 		{
-			if (id_getLongURL_Ljava_lang_String_Lorg_json_JSONObject_ == IntPtr.Zero)
-				id_getLongURL_Ljava_lang_String_Lorg_json_JSONObject_ = JNIEnv.GetMethodID (class_ref, "getLongURL", "(Ljava/lang/String;Lorg/json/JSONObject;)Ljava/lang/String;");
+			if (id_getReferralUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ == IntPtr.Zero)
+				id_getReferralUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ = JNIEnv.GetMethodID (class_ref, "getReferralUrl", "(Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V");
 			IntPtr native_p0 = JNIEnv.NewString (p0);
 
-			string __ret;
 			if (GetType () == ThresholdType)
-				__ret = JNIEnv.GetString (JNIEnv.CallObjectMethod  (Handle, id_getLongURL_Ljava_lang_String_Lorg_json_JSONObject_, new JValue (native_p0), new JValue (p1)), JniHandleOwnership.TransferLocalRef);
+				JNIEnv.CallVoidMethod  (Handle, id_getReferralUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_, new JValue (native_p0), new JValue (p1), new JValue (p2));
 			else
-				__ret = JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getLongURL", "(Ljava/lang/String;Lorg/json/JSONObject;)Ljava/lang/String;"), new JValue (native_p0), new JValue (p1)), JniHandleOwnership.TransferLocalRef);
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getReferralUrl", "(Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V"), new JValue (native_p0), new JValue (p1), new JValue (p2));
 			JNIEnv.DeleteLocalRef (native_p0);
-			return __ret;
 		}
 
-		static Delegate cb_getLongURL_Lorg_json_JSONObject_;
+		static Delegate cb_getReferralUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
 #pragma warning disable 0169
-		static Delegate GetGetLongURL_Lorg_json_JSONObject_Handler ()
+		static Delegate GetGetReferralUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_Handler ()
 		{
-			if (cb_getLongURL_Lorg_json_JSONObject_ == null)
-				cb_getLongURL_Lorg_json_JSONObject_ = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr, IntPtr>) n_GetLongURL_Lorg_json_JSONObject_);
-			return cb_getLongURL_Lorg_json_JSONObject_;
+			if (cb_getReferralUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ == null)
+				cb_getReferralUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, IntPtr>) n_GetReferralUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_);
+			return cb_getReferralUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
 		}
 
-		static IntPtr n_GetLongURL_Lorg_json_JSONObject_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+		static void n_GetReferralUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1, IntPtr native_p2, IntPtr native_p3)
 		{
 			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-			global::Org.Json.JSONObject p0 = global::Java.Lang.Object.GetObject<global::Org.Json.JSONObject> (native_p0, JniHandleOwnership.DoNotTransfer);
-			IntPtr __ret = JNIEnv.NewString (__this.GetLongURL (p0));
-			return __ret;
+			System.Collections.Generic.ICollection<string> p0 = global::Android.Runtime.JavaCollection<string>.FromJniHandle (native_p0, JniHandleOwnership.DoNotTransfer);
+			string p1 = JNIEnv.GetString (native_p1, JniHandleOwnership.DoNotTransfer);
+			global::Org.Json.JSONObject p2 = global::Java.Lang.Object.GetObject<global::Org.Json.JSONObject> (native_p2, JniHandleOwnership.DoNotTransfer);
+			global::BranchSDK.Branch.IBranchLinkCreateListener p3 = (global::BranchSDK.Branch.IBranchLinkCreateListener)global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.IBranchLinkCreateListener> (native_p3, JniHandleOwnership.DoNotTransfer);
+			__this.GetReferralUrl (p0, p1, p2, p3);
 		}
 #pragma warning restore 0169
 
-		static IntPtr id_getLongURL_Lorg_json_JSONObject_;
-		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='getLongURL' and count(parameter)=1 and parameter[1][@type='org.json.JSONObject']]"
-		[Register ("getLongURL", "(Lorg/json/JSONObject;)Ljava/lang/String;", "GetGetLongURL_Lorg_json_JSONObject_Handler")]
-		public virtual string GetLongURL (global::Org.Json.JSONObject p0)
+		static IntPtr id_getReferralUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='getReferralUrl' and count(parameter)=4 and parameter[1][@type='java.util.Collection'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='org.json.JSONObject'] and parameter[4][@type='io.branch.referral.Branch.BranchLinkCreateListener']]"
+		[Register ("getReferralUrl", "(Ljava/util/Collection;Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V", "GetGetReferralUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_Handler")]
+		public virtual void GetReferralUrl (global::System.Collections.Generic.ICollection<string> p0, string p1, global::Org.Json.JSONObject p2, global::BranchSDK.Branch.IBranchLinkCreateListener p3)
 		{
-			if (id_getLongURL_Lorg_json_JSONObject_ == IntPtr.Zero)
-				id_getLongURL_Lorg_json_JSONObject_ = JNIEnv.GetMethodID (class_ref, "getLongURL", "(Lorg/json/JSONObject;)Ljava/lang/String;");
+			if (id_getReferralUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ == IntPtr.Zero)
+				id_getReferralUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ = JNIEnv.GetMethodID (class_ref, "getReferralUrl", "(Ljava/util/Collection;Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V");
+			IntPtr native_p0 = global::Android.Runtime.JavaCollection<string>.ToLocalJniHandle (p0);
+			IntPtr native_p1 = JNIEnv.NewString (p1);
 
-			string __ret;
 			if (GetType () == ThresholdType)
-				__ret = JNIEnv.GetString (JNIEnv.CallObjectMethod  (Handle, id_getLongURL_Lorg_json_JSONObject_, new JValue (p0)), JniHandleOwnership.TransferLocalRef);
+				JNIEnv.CallVoidMethod  (Handle, id_getReferralUrl_Ljava_util_Collection_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_, new JValue (native_p0), new JValue (native_p1), new JValue (p2), new JValue (p3));
 			else
-				__ret = JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getLongURL", "(Lorg/json/JSONObject;)Ljava/lang/String;"), new JValue (p0)), JniHandleOwnership.TransferLocalRef);
-			return __ret;
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getReferralUrl", "(Ljava/util/Collection;Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V"), new JValue (native_p0), new JValue (native_p1), new JValue (p2), new JValue (p3));
+			JNIEnv.DeleteLocalRef (native_p0);
+			JNIEnv.DeleteLocalRef (native_p1);
 		}
 
 		static Delegate cb_getShortUrl_Lio_branch_referral_Branch_BranchLinkCreateListener_;
@@ -889,73 +1378,89 @@ namespace BranchSDK {
 				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getShortUrl", "(Lio/branch/referral/Branch$BranchLinkCreateListener;)V"), new JValue (p0));
 		}
 
-		static Delegate cb_getShortUrl_Ljava_lang_String_Lio_branch_referral_Branch_BranchLinkCreateListener_;
+		static Delegate cb_getShortUrl_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
 #pragma warning disable 0169
-		static Delegate GetGetShortUrl_Ljava_lang_String_Lio_branch_referral_Branch_BranchLinkCreateListener_Handler ()
+		static Delegate GetGetShortUrl_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_Handler ()
 		{
-			if (cb_getShortUrl_Ljava_lang_String_Lio_branch_referral_Branch_BranchLinkCreateListener_ == null)
-				cb_getShortUrl_Ljava_lang_String_Lio_branch_referral_Branch_BranchLinkCreateListener_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr, IntPtr>) n_GetShortUrl_Ljava_lang_String_Lio_branch_referral_Branch_BranchLinkCreateListener_);
-			return cb_getShortUrl_Ljava_lang_String_Lio_branch_referral_Branch_BranchLinkCreateListener_;
+			if (cb_getShortUrl_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ == null)
+				cb_getShortUrl_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, IntPtr>) n_GetShortUrl_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_);
+			return cb_getShortUrl_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
 		}
 
-		static void n_GetShortUrl_Ljava_lang_String_Lio_branch_referral_Branch_BranchLinkCreateListener_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1)
+		static void n_GetShortUrl_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1, IntPtr native_p2, IntPtr native_p3, IntPtr native_p4)
 		{
 			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
-			global::BranchSDK.Branch.IBranchLinkCreateListener p1 = (global::BranchSDK.Branch.IBranchLinkCreateListener)global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.IBranchLinkCreateListener> (native_p1, JniHandleOwnership.DoNotTransfer);
-			__this.GetShortUrl (p0, p1);
+			string p1 = JNIEnv.GetString (native_p1, JniHandleOwnership.DoNotTransfer);
+			string p2 = JNIEnv.GetString (native_p2, JniHandleOwnership.DoNotTransfer);
+			global::Org.Json.JSONObject p3 = global::Java.Lang.Object.GetObject<global::Org.Json.JSONObject> (native_p3, JniHandleOwnership.DoNotTransfer);
+			global::BranchSDK.Branch.IBranchLinkCreateListener p4 = (global::BranchSDK.Branch.IBranchLinkCreateListener)global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.IBranchLinkCreateListener> (native_p4, JniHandleOwnership.DoNotTransfer);
+			__this.GetShortUrl (p0, p1, p2, p3, p4);
 		}
 #pragma warning restore 0169
 
-		static IntPtr id_getShortUrl_Ljava_lang_String_Lio_branch_referral_Branch_BranchLinkCreateListener_;
-		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='getShortUrl' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='io.branch.referral.Branch.BranchLinkCreateListener']]"
-		[Register ("getShortUrl", "(Ljava/lang/String;Lio/branch/referral/Branch$BranchLinkCreateListener;)V", "GetGetShortUrl_Ljava_lang_String_Lio_branch_referral_Branch_BranchLinkCreateListener_Handler")]
-		public virtual void GetShortUrl (string p0, global::BranchSDK.Branch.IBranchLinkCreateListener p1)
+		static IntPtr id_getShortUrl_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='getShortUrl' and count(parameter)=5 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='org.json.JSONObject'] and parameter[5][@type='io.branch.referral.Branch.BranchLinkCreateListener']]"
+		[Register ("getShortUrl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V", "GetGetShortUrl_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_Handler")]
+		public virtual void GetShortUrl (string p0, string p1, string p2, global::Org.Json.JSONObject p3, global::BranchSDK.Branch.IBranchLinkCreateListener p4)
 		{
-			if (id_getShortUrl_Ljava_lang_String_Lio_branch_referral_Branch_BranchLinkCreateListener_ == IntPtr.Zero)
-				id_getShortUrl_Ljava_lang_String_Lio_branch_referral_Branch_BranchLinkCreateListener_ = JNIEnv.GetMethodID (class_ref, "getShortUrl", "(Ljava/lang/String;Lio/branch/referral/Branch$BranchLinkCreateListener;)V");
+			if (id_getShortUrl_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ == IntPtr.Zero)
+				id_getShortUrl_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ = JNIEnv.GetMethodID (class_ref, "getShortUrl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V");
 			IntPtr native_p0 = JNIEnv.NewString (p0);
+			IntPtr native_p1 = JNIEnv.NewString (p1);
+			IntPtr native_p2 = JNIEnv.NewString (p2);
 
 			if (GetType () == ThresholdType)
-				JNIEnv.CallVoidMethod  (Handle, id_getShortUrl_Ljava_lang_String_Lio_branch_referral_Branch_BranchLinkCreateListener_, new JValue (native_p0), new JValue (p1));
+				JNIEnv.CallVoidMethod  (Handle, id_getShortUrl_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_, new JValue (native_p0), new JValue (native_p1), new JValue (native_p2), new JValue (p3), new JValue (p4));
 			else
-				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getShortUrl", "(Ljava/lang/String;Lio/branch/referral/Branch$BranchLinkCreateListener;)V"), new JValue (native_p0), new JValue (p1));
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getShortUrl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V"), new JValue (native_p0), new JValue (native_p1), new JValue (native_p2), new JValue (p3), new JValue (p4));
 			JNIEnv.DeleteLocalRef (native_p0);
+			JNIEnv.DeleteLocalRef (native_p1);
+			JNIEnv.DeleteLocalRef (native_p2);
 		}
 
-		static Delegate cb_getShortUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
+		static Delegate cb_getShortUrl_Ljava_util_Collection_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
 #pragma warning disable 0169
-		static Delegate GetGetShortUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_Handler ()
+		static Delegate GetGetShortUrl_Ljava_util_Collection_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_Handler ()
 		{
-			if (cb_getShortUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ == null)
-				cb_getShortUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr, IntPtr, IntPtr>) n_GetShortUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_);
-			return cb_getShortUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
+			if (cb_getShortUrl_Ljava_util_Collection_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ == null)
+				cb_getShortUrl_Ljava_util_Collection_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, IntPtr, IntPtr>) n_GetShortUrl_Ljava_util_Collection_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_);
+			return cb_getShortUrl_Ljava_util_Collection_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
 		}
 
-		static void n_GetShortUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1, IntPtr native_p2)
+		static void n_GetShortUrl_Ljava_util_Collection_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1, IntPtr native_p2, IntPtr native_p3, IntPtr native_p4, IntPtr native_p5)
 		{
 			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
-			global::Org.Json.JSONObject p1 = global::Java.Lang.Object.GetObject<global::Org.Json.JSONObject> (native_p1, JniHandleOwnership.DoNotTransfer);
-			global::BranchSDK.Branch.IBranchLinkCreateListener p2 = (global::BranchSDK.Branch.IBranchLinkCreateListener)global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.IBranchLinkCreateListener> (native_p2, JniHandleOwnership.DoNotTransfer);
-			__this.GetShortUrl (p0, p1, p2);
+			System.Collections.Generic.ICollection<string> p0 = global::Android.Runtime.JavaCollection<string>.FromJniHandle (native_p0, JniHandleOwnership.DoNotTransfer);
+			string p1 = JNIEnv.GetString (native_p1, JniHandleOwnership.DoNotTransfer);
+			string p2 = JNIEnv.GetString (native_p2, JniHandleOwnership.DoNotTransfer);
+			string p3 = JNIEnv.GetString (native_p3, JniHandleOwnership.DoNotTransfer);
+			global::Org.Json.JSONObject p4 = global::Java.Lang.Object.GetObject<global::Org.Json.JSONObject> (native_p4, JniHandleOwnership.DoNotTransfer);
+			global::BranchSDK.Branch.IBranchLinkCreateListener p5 = (global::BranchSDK.Branch.IBranchLinkCreateListener)global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.IBranchLinkCreateListener> (native_p5, JniHandleOwnership.DoNotTransfer);
+			__this.GetShortUrl (p0, p1, p2, p3, p4, p5);
 		}
 #pragma warning restore 0169
 
-		static IntPtr id_getShortUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
-		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='getShortUrl' and count(parameter)=3 and parameter[1][@type='java.lang.String'] and parameter[2][@type='org.json.JSONObject'] and parameter[3][@type='io.branch.referral.Branch.BranchLinkCreateListener']]"
-		[Register ("getShortUrl", "(Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V", "GetGetShortUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_Handler")]
-		public virtual void GetShortUrl (string p0, global::Org.Json.JSONObject p1, global::BranchSDK.Branch.IBranchLinkCreateListener p2)
+		static IntPtr id_getShortUrl_Ljava_util_Collection_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='getShortUrl' and count(parameter)=6 and parameter[1][@type='java.util.Collection'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String'] and parameter[5][@type='org.json.JSONObject'] and parameter[6][@type='io.branch.referral.Branch.BranchLinkCreateListener']]"
+		[Register ("getShortUrl", "(Ljava/util/Collection;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V", "GetGetShortUrl_Ljava_util_Collection_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_Handler")]
+		public virtual void GetShortUrl (global::System.Collections.Generic.ICollection<string> p0, string p1, string p2, string p3, global::Org.Json.JSONObject p4, global::BranchSDK.Branch.IBranchLinkCreateListener p5)
 		{
-			if (id_getShortUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ == IntPtr.Zero)
-				id_getShortUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ = JNIEnv.GetMethodID (class_ref, "getShortUrl", "(Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V");
-			IntPtr native_p0 = JNIEnv.NewString (p0);
+			if (id_getShortUrl_Ljava_util_Collection_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ == IntPtr.Zero)
+				id_getShortUrl_Ljava_util_Collection_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_ = JNIEnv.GetMethodID (class_ref, "getShortUrl", "(Ljava/util/Collection;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V");
+			IntPtr native_p0 = global::Android.Runtime.JavaCollection<string>.ToLocalJniHandle (p0);
+			IntPtr native_p1 = JNIEnv.NewString (p1);
+			IntPtr native_p2 = JNIEnv.NewString (p2);
+			IntPtr native_p3 = JNIEnv.NewString (p3);
 
 			if (GetType () == ThresholdType)
-				JNIEnv.CallVoidMethod  (Handle, id_getShortUrl_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_, new JValue (native_p0), new JValue (p1), new JValue (p2));
+				JNIEnv.CallVoidMethod  (Handle, id_getShortUrl_Ljava_util_Collection_Ljava_lang_String_Ljava_lang_String_Ljava_lang_String_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_, new JValue (native_p0), new JValue (native_p1), new JValue (native_p2), new JValue (native_p3), new JValue (p4), new JValue (p5));
 			else
-				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getShortUrl", "(Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V"), new JValue (native_p0), new JValue (p1), new JValue (p2));
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getShortUrl", "(Ljava/util/Collection;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/json/JSONObject;Lio/branch/referral/Branch$BranchLinkCreateListener;)V"), new JValue (native_p0), new JValue (native_p1), new JValue (native_p2), new JValue (native_p3), new JValue (p4), new JValue (p5));
 			JNIEnv.DeleteLocalRef (native_p0);
+			JNIEnv.DeleteLocalRef (native_p1);
+			JNIEnv.DeleteLocalRef (native_p2);
+			JNIEnv.DeleteLocalRef (native_p3);
 		}
 
 		static Delegate cb_getShortUrl_Lorg_json_JSONObject_Lio_branch_referral_Branch_BranchLinkCreateListener_;
@@ -1127,6 +1632,223 @@ namespace BranchSDK {
 			else
 				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "identifyUser", "(Ljava/lang/String;Lio/branch/referral/Branch$BranchReferralInitListener;)V"), new JValue (native_p0), new JValue (p1));
 			JNIEnv.DeleteLocalRef (native_p0);
+		}
+
+		static Delegate cb_initSession;
+#pragma warning disable 0169
+		static Delegate GetInitSessionHandler ()
+		{
+			if (cb_initSession == null)
+				cb_initSession = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr>) n_InitSession);
+			return cb_initSession;
+		}
+
+		static void n_InitSession (IntPtr jnienv, IntPtr native__this)
+		{
+			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			__this.InitSession ();
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_initSession;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='initSession' and count(parameter)=0]"
+		[Register ("initSession", "()V", "GetInitSessionHandler")]
+		public virtual void InitSession ()
+		{
+			if (id_initSession == IntPtr.Zero)
+				id_initSession = JNIEnv.GetMethodID (class_ref, "initSession", "()V");
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_initSession);
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "initSession", "()V"));
+		}
+
+		static Delegate cb_initSession_Z;
+#pragma warning disable 0169
+		static Delegate GetInitSession_ZHandler ()
+		{
+			if (cb_initSession_Z == null)
+				cb_initSession_Z = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, bool>) n_InitSession_Z);
+			return cb_initSession_Z;
+		}
+
+		static void n_InitSession_Z (IntPtr jnienv, IntPtr native__this, bool p0)
+		{
+			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			__this.InitSession (p0);
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_initSession_Z;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='initSession' and count(parameter)=1 and parameter[1][@type='boolean']]"
+		[Register ("initSession", "(Z)V", "GetInitSession_ZHandler")]
+		public virtual void InitSession (bool p0)
+		{
+			if (id_initSession_Z == IntPtr.Zero)
+				id_initSession_Z = JNIEnv.GetMethodID (class_ref, "initSession", "(Z)V");
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_initSession_Z, new JValue (p0));
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "initSession", "(Z)V"), new JValue (p0));
+		}
+
+		static Delegate cb_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_;
+#pragma warning disable 0169
+		static Delegate GetInitSession_Lio_branch_referral_Branch_BranchReferralInitListener_Handler ()
+		{
+			if (cb_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_ == null)
+				cb_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr>) n_InitSession_Lio_branch_referral_Branch_BranchReferralInitListener_);
+			return cb_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_;
+		}
+
+		static void n_InitSession_Lio_branch_referral_Branch_BranchReferralInitListener_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+		{
+			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::BranchSDK.Branch.IBranchReferralInitListener p0 = (global::BranchSDK.Branch.IBranchReferralInitListener)global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.IBranchReferralInitListener> (native_p0, JniHandleOwnership.DoNotTransfer);
+			__this.InitSession (p0);
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='initSession' and count(parameter)=1 and parameter[1][@type='io.branch.referral.Branch.BranchReferralInitListener']]"
+		[Register ("initSession", "(Lio/branch/referral/Branch$BranchReferralInitListener;)V", "GetInitSession_Lio_branch_referral_Branch_BranchReferralInitListener_Handler")]
+		public virtual void InitSession (global::BranchSDK.Branch.IBranchReferralInitListener p0)
+		{
+			if (id_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_ == IntPtr.Zero)
+				id_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_ = JNIEnv.GetMethodID (class_ref, "initSession", "(Lio/branch/referral/Branch$BranchReferralInitListener;)V");
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_, new JValue (p0));
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "initSession", "(Lio/branch/referral/Branch$BranchReferralInitListener;)V"), new JValue (p0));
+		}
+
+		static Delegate cb_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_Landroid_net_Uri_;
+#pragma warning disable 0169
+		static Delegate GetInitSession_Lio_branch_referral_Branch_BranchReferralInitListener_Landroid_net_Uri_Handler ()
+		{
+			if (cb_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_Landroid_net_Uri_ == null)
+				cb_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_Landroid_net_Uri_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr, IntPtr>) n_InitSession_Lio_branch_referral_Branch_BranchReferralInitListener_Landroid_net_Uri_);
+			return cb_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_Landroid_net_Uri_;
+		}
+
+		static void n_InitSession_Lio_branch_referral_Branch_BranchReferralInitListener_Landroid_net_Uri_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1)
+		{
+			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::BranchSDK.Branch.IBranchReferralInitListener p0 = (global::BranchSDK.Branch.IBranchReferralInitListener)global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.IBranchReferralInitListener> (native_p0, JniHandleOwnership.DoNotTransfer);
+			global::Android.Net.Uri p1 = global::Java.Lang.Object.GetObject<global::Android.Net.Uri> (native_p1, JniHandleOwnership.DoNotTransfer);
+			__this.InitSession (p0, p1);
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_Landroid_net_Uri_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='initSession' and count(parameter)=2 and parameter[1][@type='io.branch.referral.Branch.BranchReferralInitListener'] and parameter[2][@type='android.net.Uri']]"
+		[Register ("initSession", "(Lio/branch/referral/Branch$BranchReferralInitListener;Landroid/net/Uri;)V", "GetInitSession_Lio_branch_referral_Branch_BranchReferralInitListener_Landroid_net_Uri_Handler")]
+		public virtual void InitSession (global::BranchSDK.Branch.IBranchReferralInitListener p0, global::Android.Net.Uri p1)
+		{
+			if (id_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_Landroid_net_Uri_ == IntPtr.Zero)
+				id_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_Landroid_net_Uri_ = JNIEnv.GetMethodID (class_ref, "initSession", "(Lio/branch/referral/Branch$BranchReferralInitListener;Landroid/net/Uri;)V");
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_Landroid_net_Uri_, new JValue (p0), new JValue (p1));
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "initSession", "(Lio/branch/referral/Branch$BranchReferralInitListener;Landroid/net/Uri;)V"), new JValue (p0), new JValue (p1));
+		}
+
+		static Delegate cb_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_Z;
+#pragma warning disable 0169
+		static Delegate GetInitSession_Lio_branch_referral_Branch_BranchReferralInitListener_ZHandler ()
+		{
+			if (cb_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_Z == null)
+				cb_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_Z = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr, bool>) n_InitSession_Lio_branch_referral_Branch_BranchReferralInitListener_Z);
+			return cb_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_Z;
+		}
+
+		static void n_InitSession_Lio_branch_referral_Branch_BranchReferralInitListener_Z (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, bool p1)
+		{
+			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::BranchSDK.Branch.IBranchReferralInitListener p0 = (global::BranchSDK.Branch.IBranchReferralInitListener)global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.IBranchReferralInitListener> (native_p0, JniHandleOwnership.DoNotTransfer);
+			__this.InitSession (p0, p1);
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_Z;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='initSession' and count(parameter)=2 and parameter[1][@type='io.branch.referral.Branch.BranchReferralInitListener'] and parameter[2][@type='boolean']]"
+		[Register ("initSession", "(Lio/branch/referral/Branch$BranchReferralInitListener;Z)V", "GetInitSession_Lio_branch_referral_Branch_BranchReferralInitListener_ZHandler")]
+		public virtual void InitSession (global::BranchSDK.Branch.IBranchReferralInitListener p0, bool p1)
+		{
+			if (id_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_Z == IntPtr.Zero)
+				id_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_Z = JNIEnv.GetMethodID (class_ref, "initSession", "(Lio/branch/referral/Branch$BranchReferralInitListener;Z)V");
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_Z, new JValue (p0), new JValue (p1));
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "initSession", "(Lio/branch/referral/Branch$BranchReferralInitListener;Z)V"), new JValue (p0), new JValue (p1));
+		}
+
+		static Delegate cb_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_ZLandroid_net_Uri_;
+#pragma warning disable 0169
+		static Delegate GetInitSession_Lio_branch_referral_Branch_BranchReferralInitListener_ZLandroid_net_Uri_Handler ()
+		{
+			if (cb_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_ZLandroid_net_Uri_ == null)
+				cb_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_ZLandroid_net_Uri_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr, bool, IntPtr>) n_InitSession_Lio_branch_referral_Branch_BranchReferralInitListener_ZLandroid_net_Uri_);
+			return cb_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_ZLandroid_net_Uri_;
+		}
+
+		static void n_InitSession_Lio_branch_referral_Branch_BranchReferralInitListener_ZLandroid_net_Uri_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, bool p1, IntPtr native_p2)
+		{
+			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::BranchSDK.Branch.IBranchReferralInitListener p0 = (global::BranchSDK.Branch.IBranchReferralInitListener)global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.IBranchReferralInitListener> (native_p0, JniHandleOwnership.DoNotTransfer);
+			global::Android.Net.Uri p2 = global::Java.Lang.Object.GetObject<global::Android.Net.Uri> (native_p2, JniHandleOwnership.DoNotTransfer);
+			__this.InitSession (p0, p1, p2);
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_ZLandroid_net_Uri_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='initSession' and count(parameter)=3 and parameter[1][@type='io.branch.referral.Branch.BranchReferralInitListener'] and parameter[2][@type='boolean'] and parameter[3][@type='android.net.Uri']]"
+		[Register ("initSession", "(Lio/branch/referral/Branch$BranchReferralInitListener;ZLandroid/net/Uri;)V", "GetInitSession_Lio_branch_referral_Branch_BranchReferralInitListener_ZLandroid_net_Uri_Handler")]
+		public virtual void InitSession (global::BranchSDK.Branch.IBranchReferralInitListener p0, bool p1, global::Android.Net.Uri p2)
+		{
+			if (id_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_ZLandroid_net_Uri_ == IntPtr.Zero)
+				id_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_ZLandroid_net_Uri_ = JNIEnv.GetMethodID (class_ref, "initSession", "(Lio/branch/referral/Branch$BranchReferralInitListener;ZLandroid/net/Uri;)V");
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_initSession_Lio_branch_referral_Branch_BranchReferralInitListener_ZLandroid_net_Uri_, new JValue (p0), new JValue (p1), new JValue (p2));
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "initSession", "(Lio/branch/referral/Branch$BranchReferralInitListener;ZLandroid/net/Uri;)V"), new JValue (p0), new JValue (p1), new JValue (p2));
+		}
+
+		static Delegate cb_initSessionWithData_Landroid_net_Uri_;
+#pragma warning disable 0169
+		static Delegate GetInitSessionWithData_Landroid_net_Uri_Handler ()
+		{
+			if (cb_initSessionWithData_Landroid_net_Uri_ == null)
+				cb_initSessionWithData_Landroid_net_Uri_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr>) n_InitSessionWithData_Landroid_net_Uri_);
+			return cb_initSessionWithData_Landroid_net_Uri_;
+		}
+
+		static void n_InitSessionWithData_Landroid_net_Uri_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+		{
+			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::Android.Net.Uri p0 = global::Java.Lang.Object.GetObject<global::Android.Net.Uri> (native_p0, JniHandleOwnership.DoNotTransfer);
+			__this.InitSessionWithData (p0);
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_initSessionWithData_Landroid_net_Uri_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='initSessionWithData' and count(parameter)=1 and parameter[1][@type='android.net.Uri']]"
+		[Register ("initSessionWithData", "(Landroid/net/Uri;)V", "GetInitSessionWithData_Landroid_net_Uri_Handler")]
+		public virtual void InitSessionWithData (global::Android.Net.Uri p0)
+		{
+			if (id_initSessionWithData_Landroid_net_Uri_ == IntPtr.Zero)
+				id_initSessionWithData_Landroid_net_Uri_ = JNIEnv.GetMethodID (class_ref, "initSessionWithData", "(Landroid/net/Uri;)V");
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_initSessionWithData_Landroid_net_Uri_, new JValue (p0));
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "initSessionWithData", "(Landroid/net/Uri;)V"), new JValue (p0));
 		}
 
 		static Delegate cb_initUserSession;
@@ -1468,6 +2190,36 @@ namespace BranchSDK {
 				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "loadRewards", "(Lio/branch/referral/Branch$BranchReferralStateChangedListener;)V"), new JValue (p0));
 		}
 
+		static Delegate cb_logout;
+#pragma warning disable 0169
+		static Delegate GetLogoutHandler ()
+		{
+			if (cb_logout == null)
+				cb_logout = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr>) n_Logout);
+			return cb_logout;
+		}
+
+		static void n_Logout (IntPtr jnienv, IntPtr native__this)
+		{
+			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			__this.Logout ();
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_logout;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='logout' and count(parameter)=0]"
+		[Register ("logout", "()V", "GetLogoutHandler")]
+		public virtual void Logout ()
+		{
+			if (id_logout == IntPtr.Zero)
+				id_logout = JNIEnv.GetMethodID (class_ref, "logout", "()V");
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_logout);
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "logout", "()V"));
+		}
+
 		static Delegate cb_redeemRewards_I;
 #pragma warning disable 0169
 		static Delegate GetRedeemRewards_IHandler ()
@@ -1559,6 +2311,103 @@ namespace BranchSDK {
 				JNIEnv.CallVoidMethod  (Handle, id_resetUserSession);
 			else
 				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "resetUserSession", "()V"));
+		}
+
+		static Delegate cb_setDebug;
+#pragma warning disable 0169
+		static Delegate GetSetDebugHandler ()
+		{
+			if (cb_setDebug == null)
+				cb_setDebug = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr>) n_SetDebug);
+			return cb_setDebug;
+		}
+
+		static void n_SetDebug (IntPtr jnienv, IntPtr native__this)
+		{
+			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			__this.SetDebug ();
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_setDebug;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='setDebug' and count(parameter)=0]"
+		[Register ("setDebug", "()V", "GetSetDebugHandler")]
+		public virtual void SetDebug ()
+		{
+			if (id_setDebug == IntPtr.Zero)
+				id_setDebug = JNIEnv.GetMethodID (class_ref, "setDebug", "()V");
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_setDebug);
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setDebug", "()V"));
+		}
+
+		static Delegate cb_setIdentity_Ljava_lang_String_;
+#pragma warning disable 0169
+		static Delegate GetSetIdentity_Ljava_lang_String_Handler ()
+		{
+			if (cb_setIdentity_Ljava_lang_String_ == null)
+				cb_setIdentity_Ljava_lang_String_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr>) n_SetIdentity_Ljava_lang_String_);
+			return cb_setIdentity_Ljava_lang_String_;
+		}
+
+		static void n_SetIdentity_Ljava_lang_String_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+		{
+			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
+			__this.SetIdentity (p0);
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_setIdentity_Ljava_lang_String_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='setIdentity' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+		[Register ("setIdentity", "(Ljava/lang/String;)V", "GetSetIdentity_Ljava_lang_String_Handler")]
+		public virtual void SetIdentity (string p0)
+		{
+			if (id_setIdentity_Ljava_lang_String_ == IntPtr.Zero)
+				id_setIdentity_Ljava_lang_String_ = JNIEnv.GetMethodID (class_ref, "setIdentity", "(Ljava/lang/String;)V");
+			IntPtr native_p0 = JNIEnv.NewString (p0);
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_setIdentity_Ljava_lang_String_, new JValue (native_p0));
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setIdentity", "(Ljava/lang/String;)V"), new JValue (native_p0));
+			JNIEnv.DeleteLocalRef (native_p0);
+		}
+
+		static Delegate cb_setIdentity_Ljava_lang_String_Lio_branch_referral_Branch_BranchReferralInitListener_;
+#pragma warning disable 0169
+		static Delegate GetSetIdentity_Ljava_lang_String_Lio_branch_referral_Branch_BranchReferralInitListener_Handler ()
+		{
+			if (cb_setIdentity_Ljava_lang_String_Lio_branch_referral_Branch_BranchReferralInitListener_ == null)
+				cb_setIdentity_Ljava_lang_String_Lio_branch_referral_Branch_BranchReferralInitListener_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr, IntPtr>) n_SetIdentity_Ljava_lang_String_Lio_branch_referral_Branch_BranchReferralInitListener_);
+			return cb_setIdentity_Ljava_lang_String_Lio_branch_referral_Branch_BranchReferralInitListener_;
+		}
+
+		static void n_SetIdentity_Ljava_lang_String_Lio_branch_referral_Branch_BranchReferralInitListener_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, IntPtr native_p1)
+		{
+			global::BranchSDK.Branch __this = global::Java.Lang.Object.GetObject<global::BranchSDK.Branch> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
+			global::BranchSDK.Branch.IBranchReferralInitListener p1 = (global::BranchSDK.Branch.IBranchReferralInitListener)global::Java.Lang.Object.GetObject<global::BranchSDK.Branch.IBranchReferralInitListener> (native_p1, JniHandleOwnership.DoNotTransfer);
+			__this.SetIdentity (p0, p1);
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_setIdentity_Ljava_lang_String_Lio_branch_referral_Branch_BranchReferralInitListener_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='Branch']/method[@name='setIdentity' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='io.branch.referral.Branch.BranchReferralInitListener']]"
+		[Register ("setIdentity", "(Ljava/lang/String;Lio/branch/referral/Branch$BranchReferralInitListener;)V", "GetSetIdentity_Ljava_lang_String_Lio_branch_referral_Branch_BranchReferralInitListener_Handler")]
+		public virtual void SetIdentity (string p0, global::BranchSDK.Branch.IBranchReferralInitListener p1)
+		{
+			if (id_setIdentity_Ljava_lang_String_Lio_branch_referral_Branch_BranchReferralInitListener_ == IntPtr.Zero)
+				id_setIdentity_Ljava_lang_String_Lio_branch_referral_Branch_BranchReferralInitListener_ = JNIEnv.GetMethodID (class_ref, "setIdentity", "(Ljava/lang/String;Lio/branch/referral/Branch$BranchReferralInitListener;)V");
+			IntPtr native_p0 = JNIEnv.NewString (p0);
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_setIdentity_Ljava_lang_String_Lio_branch_referral_Branch_BranchReferralInitListener_, new JValue (native_p0), new JValue (p1));
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "setIdentity", "(Ljava/lang/String;Lio/branch/referral/Branch$BranchReferralInitListener;)V"), new JValue (native_p0), new JValue (p1));
+			JNIEnv.DeleteLocalRef (native_p0);
 		}
 
 		static Delegate cb_userCompletedAction_Ljava_lang_String_;

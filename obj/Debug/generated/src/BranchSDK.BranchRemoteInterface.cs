@@ -25,6 +25,10 @@ namespace BranchSDK {
 		[Register ("REQ_TAG_GET_REWARDS")]
 		public const string ReqTagGetRewards = (string) "t_get_rewards";
 
+		// Metadata.xml XPath field reference: path="/api/package[@name='io.branch.referral']/class[@name='BranchRemoteInterface']/field[@name='REQ_TAG_GET_REWARD_HISTORY']"
+		[Register ("REQ_TAG_GET_REWARD_HISTORY")]
+		public const string ReqTagGetRewardHistory = (string) "t_get_reward_history";
+
 		// Metadata.xml XPath field reference: path="/api/package[@name='io.branch.referral']/class[@name='BranchRemoteInterface']/field[@name='REQ_TAG_IDENTIFY']"
 		[Register ("REQ_TAG_IDENTIFY")]
 		public const string ReqTagIdentify = (string) "t_identify_user";
@@ -142,6 +146,37 @@ namespace BranchSDK {
 				JNIEnv.CallVoidMethod  (Handle, id_createCustomUrl_Lorg_json_JSONObject_, new JValue (p0));
 			else
 				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "createCustomUrl", "(Lorg/json/JSONObject;)V"), new JValue (p0));
+		}
+
+		static Delegate cb_getCreditHistory_Lorg_json_JSONObject_;
+#pragma warning disable 0169
+		static Delegate GetGetCreditHistory_Lorg_json_JSONObject_Handler ()
+		{
+			if (cb_getCreditHistory_Lorg_json_JSONObject_ == null)
+				cb_getCreditHistory_Lorg_json_JSONObject_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr>) n_GetCreditHistory_Lorg_json_JSONObject_);
+			return cb_getCreditHistory_Lorg_json_JSONObject_;
+		}
+
+		static void n_GetCreditHistory_Lorg_json_JSONObject_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+		{
+			global::BranchSDK.BranchRemoteInterface __this = global::Java.Lang.Object.GetObject<global::BranchSDK.BranchRemoteInterface> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			global::Org.Json.JSONObject p0 = global::Java.Lang.Object.GetObject<global::Org.Json.JSONObject> (native_p0, JniHandleOwnership.DoNotTransfer);
+			__this.GetCreditHistory (p0);
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_getCreditHistory_Lorg_json_JSONObject_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='BranchRemoteInterface']/method[@name='getCreditHistory' and count(parameter)=1 and parameter[1][@type='org.json.JSONObject']]"
+		[Register ("getCreditHistory", "(Lorg/json/JSONObject;)V", "GetGetCreditHistory_Lorg_json_JSONObject_Handler")]
+		public virtual void GetCreditHistory (global::Org.Json.JSONObject p0)
+		{
+			if (id_getCreditHistory_Lorg_json_JSONObject_ == IntPtr.Zero)
+				id_getCreditHistory_Lorg_json_JSONObject_ = JNIEnv.GetMethodID (class_ref, "getCreditHistory", "(Lorg/json/JSONObject;)V");
+
+			if (GetType () == ThresholdType)
+				JNIEnv.CallVoidMethod  (Handle, id_getCreditHistory_Lorg_json_JSONObject_, new JValue (p0));
+			else
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getCreditHistory", "(Lorg/json/JSONObject;)V"), new JValue (p0));
 		}
 
 		static Delegate cb_getReferralCounts;
@@ -327,67 +362,67 @@ namespace BranchSDK {
 				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "registerClose", "()V"));
 		}
 
-		static Delegate cb_registerInstall_Ljava_lang_String_;
+		static Delegate cb_registerInstall_Ljava_lang_String_Z;
 #pragma warning disable 0169
-		static Delegate GetRegisterInstall_Ljava_lang_String_Handler ()
+		static Delegate GetRegisterInstall_Ljava_lang_String_ZHandler ()
 		{
-			if (cb_registerInstall_Ljava_lang_String_ == null)
-				cb_registerInstall_Ljava_lang_String_ = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr>) n_RegisterInstall_Ljava_lang_String_);
-			return cb_registerInstall_Ljava_lang_String_;
+			if (cb_registerInstall_Ljava_lang_String_Z == null)
+				cb_registerInstall_Ljava_lang_String_Z = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, IntPtr, bool>) n_RegisterInstall_Ljava_lang_String_Z);
+			return cb_registerInstall_Ljava_lang_String_Z;
 		}
 
-		static void n_RegisterInstall_Ljava_lang_String_ (IntPtr jnienv, IntPtr native__this, IntPtr native_p0)
+		static void n_RegisterInstall_Ljava_lang_String_Z (IntPtr jnienv, IntPtr native__this, IntPtr native_p0, bool p1)
 		{
 			global::BranchSDK.BranchRemoteInterface __this = global::Java.Lang.Object.GetObject<global::BranchSDK.BranchRemoteInterface> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
 			string p0 = JNIEnv.GetString (native_p0, JniHandleOwnership.DoNotTransfer);
-			__this.RegisterInstall (p0);
+			__this.RegisterInstall (p0, p1);
 		}
 #pragma warning restore 0169
 
-		static IntPtr id_registerInstall_Ljava_lang_String_;
-		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='BranchRemoteInterface']/method[@name='registerInstall' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
-		[Register ("registerInstall", "(Ljava/lang/String;)V", "GetRegisterInstall_Ljava_lang_String_Handler")]
-		public virtual void RegisterInstall (string p0)
+		static IntPtr id_registerInstall_Ljava_lang_String_Z;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='BranchRemoteInterface']/method[@name='registerInstall' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='boolean']]"
+		[Register ("registerInstall", "(Ljava/lang/String;Z)V", "GetRegisterInstall_Ljava_lang_String_ZHandler")]
+		public virtual void RegisterInstall (string p0, bool p1)
 		{
-			if (id_registerInstall_Ljava_lang_String_ == IntPtr.Zero)
-				id_registerInstall_Ljava_lang_String_ = JNIEnv.GetMethodID (class_ref, "registerInstall", "(Ljava/lang/String;)V");
+			if (id_registerInstall_Ljava_lang_String_Z == IntPtr.Zero)
+				id_registerInstall_Ljava_lang_String_Z = JNIEnv.GetMethodID (class_ref, "registerInstall", "(Ljava/lang/String;Z)V");
 			IntPtr native_p0 = JNIEnv.NewString (p0);
 
 			if (GetType () == ThresholdType)
-				JNIEnv.CallVoidMethod  (Handle, id_registerInstall_Ljava_lang_String_, new JValue (native_p0));
+				JNIEnv.CallVoidMethod  (Handle, id_registerInstall_Ljava_lang_String_Z, new JValue (native_p0), new JValue (p1));
 			else
-				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "registerInstall", "(Ljava/lang/String;)V"), new JValue (native_p0));
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "registerInstall", "(Ljava/lang/String;Z)V"), new JValue (native_p0), new JValue (p1));
 			JNIEnv.DeleteLocalRef (native_p0);
 		}
 
-		static Delegate cb_registerOpen;
+		static Delegate cb_registerOpen_Z;
 #pragma warning disable 0169
-		static Delegate GetRegisterOpenHandler ()
+		static Delegate GetRegisterOpen_ZHandler ()
 		{
-			if (cb_registerOpen == null)
-				cb_registerOpen = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr>) n_RegisterOpen);
-			return cb_registerOpen;
+			if (cb_registerOpen_Z == null)
+				cb_registerOpen_Z = JNINativeWrapper.CreateDelegate ((Action<IntPtr, IntPtr, bool>) n_RegisterOpen_Z);
+			return cb_registerOpen_Z;
 		}
 
-		static void n_RegisterOpen (IntPtr jnienv, IntPtr native__this)
+		static void n_RegisterOpen_Z (IntPtr jnienv, IntPtr native__this, bool p0)
 		{
 			global::BranchSDK.BranchRemoteInterface __this = global::Java.Lang.Object.GetObject<global::BranchSDK.BranchRemoteInterface> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
-			__this.RegisterOpen ();
+			__this.RegisterOpen (p0);
 		}
 #pragma warning restore 0169
 
-		static IntPtr id_registerOpen;
-		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='BranchRemoteInterface']/method[@name='registerOpen' and count(parameter)=0]"
-		[Register ("registerOpen", "()V", "GetRegisterOpenHandler")]
-		public virtual void RegisterOpen ()
+		static IntPtr id_registerOpen_Z;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='BranchRemoteInterface']/method[@name='registerOpen' and count(parameter)=1 and parameter[1][@type='boolean']]"
+		[Register ("registerOpen", "(Z)V", "GetRegisterOpen_ZHandler")]
+		public virtual void RegisterOpen (bool p0)
 		{
-			if (id_registerOpen == IntPtr.Zero)
-				id_registerOpen = JNIEnv.GetMethodID (class_ref, "registerOpen", "()V");
+			if (id_registerOpen_Z == IntPtr.Zero)
+				id_registerOpen_Z = JNIEnv.GetMethodID (class_ref, "registerOpen", "(Z)V");
 
 			if (GetType () == ThresholdType)
-				JNIEnv.CallVoidMethod  (Handle, id_registerOpen);
+				JNIEnv.CallVoidMethod  (Handle, id_registerOpen_Z, new JValue (p0));
 			else
-				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "registerOpen", "()V"));
+				JNIEnv.CallNonvirtualVoidMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "registerOpen", "(Z)V"), new JValue (p0));
 		}
 
 		static Delegate cb_setNetworkCallbackListener_Lio_branch_referral_NetworkCallback_;

@@ -53,6 +53,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Xamarin.Android.Bindings.targets" />
   <ItemGroup>
-    <EmbeddedJar Include="Jars\branch-1.0.jar" />
+    <EmbeddedJar Include="Jars\branch-1.1.4.jar" />
   </ItemGroup>
 </Project>

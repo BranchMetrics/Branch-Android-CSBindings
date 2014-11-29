@@ -25,6 +25,33 @@ namespace BranchSDK {
 
 		protected ServerRequest (IntPtr javaReference, JniHandleOwnership transfer) : base (javaReference, transfer) {}
 
+		static IntPtr id_ctor_Ljava_lang_String_;
+		// Metadata.xml XPath constructor reference: path="/api/package[@name='io.branch.referral']/class[@name='ServerRequest']/constructor[@name='ServerRequest' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+		[Register (".ctor", "(Ljava/lang/String;)V", "")]
+		public ServerRequest (string p0) : base (IntPtr.Zero, JniHandleOwnership.DoNotTransfer)
+		{
+			if (Handle != IntPtr.Zero)
+				return;
+
+			IntPtr native_p0 = JNIEnv.NewString (p0);;
+			if (GetType () != typeof (ServerRequest)) {
+				SetHandle (
+						global::Android.Runtime.JNIEnv.StartCreateInstance (GetType (), "(Ljava/lang/String;)V", new JValue (native_p0)),
+						JniHandleOwnership.TransferLocalRef);
+				global::Android.Runtime.JNIEnv.FinishCreateInstance (Handle, "(Ljava/lang/String;)V", new JValue (native_p0));
+				JNIEnv.DeleteLocalRef (native_p0);
+				return;
+			}
+
+			if (id_ctor_Ljava_lang_String_ == IntPtr.Zero)
+				id_ctor_Ljava_lang_String_ = JNIEnv.GetMethodID (class_ref, "<init>", "(Ljava/lang/String;)V");
+			SetHandle (
+					global::Android.Runtime.JNIEnv.StartCreateInstance (class_ref, id_ctor_Ljava_lang_String_, new JValue (native_p0)),
+					JniHandleOwnership.TransferLocalRef);
+			JNIEnv.FinishCreateInstance (Handle, class_ref, id_ctor_Ljava_lang_String_, new JValue (native_p0));
+			JNIEnv.DeleteLocalRef (native_p0);
+		}
+
 		static IntPtr id_ctor_Ljava_lang_String_Lorg_json_JSONObject_;
 		// Metadata.xml XPath constructor reference: path="/api/package[@name='io.branch.referral']/class[@name='ServerRequest']/constructor[@name='ServerRequest' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='org.json.JSONObject']]"
 		[Register (".ctor", "(Ljava/lang/String;Lorg/json/JSONObject;)V", "")]
@@ -112,6 +139,47 @@ namespace BranchSDK {
 				else
 					return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getTag", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
 			}
+		}
+
+		static IntPtr id_fromJSON_Lorg_json_JSONObject_;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='ServerRequest']/method[@name='fromJSON' and count(parameter)=1 and parameter[1][@type='org.json.JSONObject']]"
+		[Register ("fromJSON", "(Lorg/json/JSONObject;)Lio/branch/referral/ServerRequest;", "")]
+		public static global::BranchSDK.ServerRequest FromJSON (global::Org.Json.JSONObject p0)
+		{
+			if (id_fromJSON_Lorg_json_JSONObject_ == IntPtr.Zero)
+				id_fromJSON_Lorg_json_JSONObject_ = JNIEnv.GetStaticMethodID (class_ref, "fromJSON", "(Lorg/json/JSONObject;)Lio/branch/referral/ServerRequest;");
+			global::BranchSDK.ServerRequest __ret = global::Java.Lang.Object.GetObject<global::BranchSDK.ServerRequest> (JNIEnv.CallStaticObjectMethod  (class_ref, id_fromJSON_Lorg_json_JSONObject_, new JValue (p0)), JniHandleOwnership.TransferLocalRef);
+			return __ret;
+		}
+
+		static Delegate cb_toJSON;
+#pragma warning disable 0169
+		static Delegate GetToJSONHandler ()
+		{
+			if (cb_toJSON == null)
+				cb_toJSON = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr>) n_ToJSON);
+			return cb_toJSON;
+		}
+
+		static IntPtr n_ToJSON (IntPtr jnienv, IntPtr native__this)
+		{
+			global::BranchSDK.ServerRequest __this = global::Java.Lang.Object.GetObject<global::BranchSDK.ServerRequest> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			return JNIEnv.ToLocalJniHandle (__this.ToJSON ());
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_toJSON;
+		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='ServerRequest']/method[@name='toJSON' and count(parameter)=0]"
+		[Register ("toJSON", "()Lorg/json/JSONObject;", "GetToJSONHandler")]
+		public virtual global::Org.Json.JSONObject ToJSON ()
+		{
+			if (id_toJSON == IntPtr.Zero)
+				id_toJSON = JNIEnv.GetMethodID (class_ref, "toJSON", "()Lorg/json/JSONObject;");
+
+			if (GetType () == ThresholdType)
+				return global::Java.Lang.Object.GetObject<global::Org.Json.JSONObject> (JNIEnv.CallObjectMethod  (Handle, id_toJSON), JniHandleOwnership.TransferLocalRef);
+			else
+				return global::Java.Lang.Object.GetObject<global::Org.Json.JSONObject> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "toJSON", "()Lorg/json/JSONObject;")), JniHandleOwnership.TransferLocalRef);
 		}
 
 	}

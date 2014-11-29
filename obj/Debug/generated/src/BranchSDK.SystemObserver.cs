@@ -177,6 +177,37 @@ namespace BranchSDK {
 			}
 		}
 
+		static Delegate cb_hasRealHardwareId;
+#pragma warning disable 0169
+		static Delegate GetHasRealHardwareIdHandler ()
+		{
+			if (cb_hasRealHardwareId == null)
+				cb_hasRealHardwareId = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, bool>) n_HasRealHardwareId);
+			return cb_hasRealHardwareId;
+		}
+
+		static bool n_HasRealHardwareId (IntPtr jnienv, IntPtr native__this)
+		{
+			global::BranchSDK.SystemObserver __this = global::Java.Lang.Object.GetObject<global::BranchSDK.SystemObserver> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			return __this.HasRealHardwareId;
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_hasRealHardwareId;
+		public virtual bool HasRealHardwareId {
+			// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='SystemObserver']/method[@name='hasRealHardwareId' and count(parameter)=0]"
+			[Register ("hasRealHardwareId", "()Z", "GetHasRealHardwareIdHandler")]
+			get {
+				if (id_hasRealHardwareId == IntPtr.Zero)
+					id_hasRealHardwareId = JNIEnv.GetMethodID (class_ref, "hasRealHardwareId", "()Z");
+
+				if (GetType () == ThresholdType)
+					return JNIEnv.CallBooleanMethod  (Handle, id_hasRealHardwareId);
+				else
+					return JNIEnv.CallNonvirtualBooleanMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "hasRealHardwareId", "()Z"));
+			}
+		}
+
 		static Delegate cb_getNFCPresent;
 #pragma warning disable 0169
 		static Delegate GetGetNFCPresentHandler ()
@@ -391,6 +422,37 @@ namespace BranchSDK {
 					return JNIEnv.CallBooleanMethod  (Handle, id_getTelephonePresent);
 				else
 					return JNIEnv.CallNonvirtualBooleanMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getTelephonePresent", "()Z"));
+			}
+		}
+
+		static Delegate cb_getURIScheme;
+#pragma warning disable 0169
+		static Delegate GetGetURISchemeHandler ()
+		{
+			if (cb_getURIScheme == null)
+				cb_getURIScheme = JNINativeWrapper.CreateDelegate ((Func<IntPtr, IntPtr, IntPtr>) n_GetURIScheme);
+			return cb_getURIScheme;
+		}
+
+		static IntPtr n_GetURIScheme (IntPtr jnienv, IntPtr native__this)
+		{
+			global::BranchSDK.SystemObserver __this = global::Java.Lang.Object.GetObject<global::BranchSDK.SystemObserver> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
+			return JNIEnv.NewString (__this.URIScheme);
+		}
+#pragma warning restore 0169
+
+		static IntPtr id_getURIScheme;
+		public virtual string URIScheme {
+			// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='SystemObserver']/method[@name='getURIScheme' and count(parameter)=0]"
+			[Register ("getURIScheme", "()Ljava/lang/String;", "GetGetURISchemeHandler")]
+			get {
+				if (id_getURIScheme == IntPtr.Zero)
+					id_getURIScheme = JNIEnv.GetMethodID (class_ref, "getURIScheme", "()Ljava/lang/String;");
+
+				if (GetType () == ThresholdType)
+					return JNIEnv.GetString (JNIEnv.CallObjectMethod  (Handle, id_getURIScheme), JniHandleOwnership.TransferLocalRef);
+				else
+					return JNIEnv.GetString (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "getURIScheme", "()Ljava/lang/String;")), JniHandleOwnership.TransferLocalRef);
 			}
 		}
 

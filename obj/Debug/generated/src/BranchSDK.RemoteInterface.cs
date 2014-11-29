@@ -9,13 +9,9 @@ namespace BranchSDK {
 	public partial class RemoteInterface : global::Java.Lang.Object {
 
 
-		// Metadata.xml XPath field reference: path="/api/package[@name='io.branch.referral']/class[@name='RemoteInterface']/field[@name='KEY_SERVER_CALL_STATUS_CODE']"
-		[Register ("KEY_SERVER_CALL_STATUS_CODE")]
-		public const string KeyServerCallStatusCode = (string) "httpcode";
-
-		// Metadata.xml XPath field reference: path="/api/package[@name='io.branch.referral']/class[@name='RemoteInterface']/field[@name='KEY_SERVER_CALL_TAG']"
-		[Register ("KEY_SERVER_CALL_TAG")]
-		public const string KeyServerCallTag = (string) "server_call_tag";
+		// Metadata.xml XPath field reference: path="/api/package[@name='io.branch.referral']/class[@name='RemoteInterface']/field[@name='NO_CONNECTIVITY_STATUS']"
+		[Register ("NO_CONNECTIVITY_STATUS")]
+		public const int NoConnectivityStatus = (int) -1009;
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='io.branch.referral']/class[@name='RemoteInterface']/field[@name='NO_TAG_VALUE']"
 		[Register ("NO_TAG_VALUE")]
@@ -82,19 +78,19 @@ namespace BranchSDK {
 
 		static IntPtr id_make_restful_get_Ljava_lang_String_Ljava_lang_String_;
 		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='RemoteInterface']/method[@name='make_restful_get' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]"
-		[Register ("make_restful_get", "(Ljava/lang/String;Ljava/lang/String;)Lorg/json/JSONObject;", "GetMake_restful_get_Ljava_lang_String_Ljava_lang_String_Handler")]
-		public virtual global::Org.Json.JSONObject Make_restful_get (string p0, string p1)
+		[Register ("make_restful_get", "(Ljava/lang/String;Ljava/lang/String;)Lio/branch/referral/ServerResponse;", "GetMake_restful_get_Ljava_lang_String_Ljava_lang_String_Handler")]
+		public virtual global::BranchSDK.ServerResponse Make_restful_get (string p0, string p1)
 		{
 			if (id_make_restful_get_Ljava_lang_String_Ljava_lang_String_ == IntPtr.Zero)
-				id_make_restful_get_Ljava_lang_String_Ljava_lang_String_ = JNIEnv.GetMethodID (class_ref, "make_restful_get", "(Ljava/lang/String;Ljava/lang/String;)Lorg/json/JSONObject;");
+				id_make_restful_get_Ljava_lang_String_Ljava_lang_String_ = JNIEnv.GetMethodID (class_ref, "make_restful_get", "(Ljava/lang/String;Ljava/lang/String;)Lio/branch/referral/ServerResponse;");
 			IntPtr native_p0 = JNIEnv.NewString (p0);
 			IntPtr native_p1 = JNIEnv.NewString (p1);
 
-			global::Org.Json.JSONObject __ret;
+			global::BranchSDK.ServerResponse __ret;
 			if (GetType () == ThresholdType)
-				__ret = global::Java.Lang.Object.GetObject<global::Org.Json.JSONObject> (JNIEnv.CallObjectMethod  (Handle, id_make_restful_get_Ljava_lang_String_Ljava_lang_String_, new JValue (native_p0), new JValue (native_p1)), JniHandleOwnership.TransferLocalRef);
+				__ret = global::Java.Lang.Object.GetObject<global::BranchSDK.ServerResponse> (JNIEnv.CallObjectMethod  (Handle, id_make_restful_get_Ljava_lang_String_Ljava_lang_String_, new JValue (native_p0), new JValue (native_p1)), JniHandleOwnership.TransferLocalRef);
 			else
-				__ret = global::Java.Lang.Object.GetObject<global::Org.Json.JSONObject> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "make_restful_get", "(Ljava/lang/String;Ljava/lang/String;)Lorg/json/JSONObject;"), new JValue (native_p0), new JValue (native_p1)), JniHandleOwnership.TransferLocalRef);
+				__ret = global::Java.Lang.Object.GetObject<global::BranchSDK.ServerResponse> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "make_restful_get", "(Ljava/lang/String;Ljava/lang/String;)Lio/branch/referral/ServerResponse;"), new JValue (native_p0), new JValue (native_p1)), JniHandleOwnership.TransferLocalRef);
 			JNIEnv.DeleteLocalRef (native_p0);
 			JNIEnv.DeleteLocalRef (native_p1);
 			return __ret;
@@ -122,19 +118,19 @@ namespace BranchSDK {
 
 		static IntPtr id_make_restful_post_Lorg_json_JSONObject_Ljava_lang_String_Ljava_lang_String_;
 		// Metadata.xml XPath method reference: path="/api/package[@name='io.branch.referral']/class[@name='RemoteInterface']/method[@name='make_restful_post' and count(parameter)=3 and parameter[1][@type='org.json.JSONObject'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String']]"
-		[Register ("make_restful_post", "(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Lorg/json/JSONObject;", "GetMake_restful_post_Lorg_json_JSONObject_Ljava_lang_String_Ljava_lang_String_Handler")]
-		public virtual global::Org.Json.JSONObject Make_restful_post (global::Org.Json.JSONObject p0, string p1, string p2)
+		[Register ("make_restful_post", "(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Lio/branch/referral/ServerResponse;", "GetMake_restful_post_Lorg_json_JSONObject_Ljava_lang_String_Ljava_lang_String_Handler")]
+		public virtual global::BranchSDK.ServerResponse Make_restful_post (global::Org.Json.JSONObject p0, string p1, string p2)
 		{
 			if (id_make_restful_post_Lorg_json_JSONObject_Ljava_lang_String_Ljava_lang_String_ == IntPtr.Zero)
-				id_make_restful_post_Lorg_json_JSONObject_Ljava_lang_String_Ljava_lang_String_ = JNIEnv.GetMethodID (class_ref, "make_restful_post", "(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Lorg/json/JSONObject;");
+				id_make_restful_post_Lorg_json_JSONObject_Ljava_lang_String_Ljava_lang_String_ = JNIEnv.GetMethodID (class_ref, "make_restful_post", "(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Lio/branch/referral/ServerResponse;");
 			IntPtr native_p1 = JNIEnv.NewString (p1);
 			IntPtr native_p2 = JNIEnv.NewString (p2);
 
-			global::Org.Json.JSONObject __ret;
+			global::BranchSDK.ServerResponse __ret;
 			if (GetType () == ThresholdType)
-				__ret = global::Java.Lang.Object.GetObject<global::Org.Json.JSONObject> (JNIEnv.CallObjectMethod  (Handle, id_make_restful_post_Lorg_json_JSONObject_Ljava_lang_String_Ljava_lang_String_, new JValue (p0), new JValue (native_p1), new JValue (native_p2)), JniHandleOwnership.TransferLocalRef);
+				__ret = global::Java.Lang.Object.GetObject<global::BranchSDK.ServerResponse> (JNIEnv.CallObjectMethod  (Handle, id_make_restful_post_Lorg_json_JSONObject_Ljava_lang_String_Ljava_lang_String_, new JValue (p0), new JValue (native_p1), new JValue (native_p2)), JniHandleOwnership.TransferLocalRef);
 			else
-				__ret = global::Java.Lang.Object.GetObject<global::Org.Json.JSONObject> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "make_restful_post", "(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Lorg/json/JSONObject;"), new JValue (p0), new JValue (native_p1), new JValue (native_p2)), JniHandleOwnership.TransferLocalRef);
+				__ret = global::Java.Lang.Object.GetObject<global::BranchSDK.ServerResponse> (JNIEnv.CallNonvirtualObjectMethod  (Handle, ThresholdClass, JNIEnv.GetMethodID (ThresholdClass, "make_restful_post", "(Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;)Lio/branch/referral/ServerResponse;"), new JValue (p0), new JValue (native_p1), new JValue (native_p2)), JniHandleOwnership.TransferLocalRef);
 			JNIEnv.DeleteLocalRef (native_p1);
 			JNIEnv.DeleteLocalRef (native_p2);
 			return __ret;

@@ -38,16 +38,20 @@ namespace Java.Interop {
 		{
 			if (package_io_branch_referral_mappings == null) {
 				package_io_branch_referral_mappings = new string[]{
+					"io/branch/referral/ApkParser:BranchSDK.ApkParser",
 					"io/branch/referral/Base64:BranchSDK.Base64",
 					"io/branch/referral/Base64$Coder:BranchSDK.Base64/Coder",
 					"io/branch/referral/Base64$Decoder:BranchSDK.Base64/Decoder",
 					"io/branch/referral/Base64$Encoder:BranchSDK.Base64/Encoder",
 					"io/branch/referral/Branch:BranchSDK.Branch",
+					"io/branch/referral/Branch$CreditHistoryOrder:BranchSDK.Branch/CreditHistoryOrder",
 					"io/branch/referral/Branch$ReferralNetworkCallback:BranchSDK.Branch/ReferralNetworkCallback",
 					"io/branch/referral/BranchRemoteInterface:BranchSDK.BranchRemoteInterface",
 					"io/branch/referral/PrefHelper:BranchSDK.PrefHelper",
 					"io/branch/referral/RemoteInterface:BranchSDK.RemoteInterface",
 					"io/branch/referral/ServerRequest:BranchSDK.ServerRequest",
+					"io/branch/referral/ServerRequestQueue:BranchSDK.ServerRequestQueue",
+					"io/branch/referral/ServerResponse:BranchSDK.ServerResponse",
 					"io/branch/referral/SystemObserver:BranchSDK.SystemObserver",
 				};
 			}
